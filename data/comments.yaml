@@ -1,0 +1,1839 @@
+- id: "8709"
+  author_name: JuXReal
+  author_email: juxreal@hotmail.com
+  author_url: http://www.juxclan.de
+  published: 2014-10-11T18:38:23Z
+  parent_id: "0"
+  content: "Hi, it doesent work. And i dont know whats missing.\n\nProblem:\n\n ee make_unix_clang.sh \n\ncommand not found - what is missing ?\n\nNext:\n\n\npi@raspberrypi4 ~/gameserver/teeworlds/bam-0.4.0 $ ./make_unix_clang.sh\n./make_unix_clang.sh: 2: ./make_unix_clang.sh: clang: not found\nsrc/tools/txt2c: 1: src/tools/txt2c:ELF: not found\nsrc/tools/txt2c: 2: src/tools/txt2c: ▒: not found\nsrc/tools/txt2c: 1: src/tools/txt2c: : not found\nsrc/tools/txt2c: 1: src/tools/txt2c: @: not found\nsrc/tools/txt2c: 3: src/tools/txt2c: 8H: not found\nsrc/tools/txt2c: 4: src/tools/txt2c: ,: not found\nsrc/tools/txt2c: 5: src/tools/txt2c: @,: not found\nsrc/tools/txt2c: 1: src/tools/txt2c: : not found\nsrc/tools/txt2c: 6: src/tools/txt2c: @10615Q▒tR▒td▒▒/lib64/ld-linux-x86-64.so.2GNUGNUy▒n-▒%▒\n▒▒▒9▒P▒▒▒: not found\nsrc/tools/txt2c: 7: src/tools/txt2c: Syntax error: \"(\" unexpected\n./make_unix_clang.sh: 4: ./make_unix_clang.sh: clang: not found"
+  post_url: /compiling-teeworlds-server/
+  post_id: "24"
+- id: "41"
+  author_name: Iz
+  author_email: i@moo.com
+  author_url: ""
+  published: 2012-11-24T17:51:59Z
+  parent_id: "0"
+  content: |-
+    Thank you.
+
+    Trying to install cd /usr/ports/emulators/virtualbox-ose within a 64bit jail was not going well.
+
+    I was shocked how easy your 32bit jail concept was. The bsdinstall binary is quite frankly rubbish!
+  post_url: /32bit-jail-on-64bit-freebsd/
+  post_id: "75"
+- id: "797"
+  author_name: noob jailer
+  author_email: nj@asdf.com
+  author_url: ""
+  published: 2014-02-21T17:51:43Z
+  parent_id: "0"
+  content: |-
+    A question:
+    I have set up a 32-bit system &amp; port build (&amp;install) jail for my soekris on my amd64 install.
+    How do I update it? Make installworld dies with "<i>install: rename: /lib/INS@Oz23 to /lib/libc.so.7: Operation not permitted</i>".
+    If I turn off the <i>schg</i> flag for <i>/lib/libc.so.7</i>, the file simply gets deleted and not copied over and the install dies on the next line for that file.
+    I would prefer to keep the jail's build processes separate because accidentally mixing the architectures would be <i>bad</i>.
+  post_url: /32bit-jail-on-64bit-freebsd/
+  post_id: "75"
+- id: "1539"
+  author_name: noob jailer
+  author_email: fdafddfsfasd@adfadsc.com
+  author_url: ""
+  published: 2014-05-20T15:35:19Z
+  parent_id: "797"
+  content: |-
+    Answering my own question, like this, I suppose:
+    http://muc.lists.freebsd.bugs.narkive.com/dE72srCk/misc-185480-worldtmp-first-in-path-during-installworld#post2
+  post_url: /32bit-jail-on-64bit-freebsd/
+  post_id: "75"
+- id: "11574"
+  author_name: Dave
+  author_email: dave@ci.com.au
+  author_url: ""
+  published: 2015-02-04T11:41:02Z
+  parent_id: "0"
+  content: |-
+    This article should be added to the FreeBSD handbook as it is still not made clear in there how to do this really common.
+
+    The instance specific settings e.g.jail_32bitjail_rootdir=”/usr/jails/32bitjail”
+    are now handled in /etc/jail.conf
+
+    The /etc/rc.d/jail script leads you through well enough to figure it out.
+
+    The handbook (as at 4th Feb 2015)  is yet to be updated with the new config file info.
+  post_url: /32bit-jail-on-64bit-freebsd/
+  post_id: "75"
+- id: "104"
+  author_name: Grank
+  author_email: grant.bowering@gmail.com
+  author_url: ""
+  published: 2013-04-08T22:10:01Z
+  parent_id: "0"
+  content: "I'm leaving a comment here in order to further improve the Google search results on a related issue: \nStefan updated sipe in 1.15.1 to address the issue you describe above.  However, as a result, if you still have your old BPOS login (or potentially any other value than whatever the correct value might be) in the Login field, Office 365 will return a different cryptic error:\n\"The specified member name is either invalid or empty.\"\nThis was really confusing to me, as I haven't touched my config settings since we were upgraded to Office 365 in March 2012, and it had been working happily all this time...  \nIn my case, setting the Login value to blank restored connectivity for me.  If that hadn't worked, Stefan suggested I would have needed to determine what the current correct value for my O365 login is and supply that instead.  (Not sure how to get that though; he just said \"ask your IT\" but I don't think anyone here really knows as it's all abstracted away from us.)\nAnyway, hope that helps someone else at some point!"
+  post_url: /pidgin-and-lync-problem-solved/
+  post_id: "101"
+- id: "123"
+  author_name: Pradeep
+  author_email: pradeepkr@gmail.com
+  author_url: ""
+  published: 2013-04-15T19:06:56Z
+  parent_id: "0"
+  content: Thanks for writing the informative blog post. Finally I found a solution through you to the mind numbing problem.
+  post_url: /pidgin-and-lync-problem-solved/
+  post_id: "101"
+- id: "513"
+  author_name: Gabriel
+  author_email: gabriellus018@gmail.com
+  author_url: http://n/a
+  published: 2013-11-18T13:05:59Z
+  parent_id: "0"
+  content: |-
+    Guys, so can you give a concrete example?
+
+    You changed your Ubuntu username from what to what to work?
+    I don't get what exactly you changed your linux username into...
+
+    Pls help?
+
+    Thanks!
+  post_url: /pidgin-and-lync-problem-solved/
+  post_id: "101"
+- id: "794"
+  author_name: Donald Ambrose
+  author_email: donaldambrose@gmail.com
+  author_url: ""
+  published: 2014-02-04T15:11:45Z
+  parent_id: "0"
+  content: What if im using a perl script and i need to put the lync settings as is server name,username and password
+  post_url: /pidgin-and-lync-problem-solved/
+  post_id: "101"
+- id: "14002"
+  author_name: KenP
+  author_email: kanwar.plaha@gmail.com
+  author_url: ""
+  published: 2015-04-20T02:46:42Z
+  parent_id: "0"
+  content: This change did not work for me. I keep getting the same error repeatedly. I've tried both the Lync 2010 and Lync 2013 user-agent strings. My company uses Lync 2013 thought the firefox browser plugin works (with very limited functionality). Pidgin does not. Running on Linux.
+  post_url: /pidgin-and-lync-problem-solved/
+  post_id: "101"
+- id: "22364"
+  author_name: Quasar
+  author_email: quasar@ja.rosz.org
+  author_url: ""
+  published: 2017-05-10T18:53:42Z
+  parent_id: "0"
+  content: Holy crap on a cracker! This was exactly my problem.. I should have suspected as much. Thank you so much for this, and thank you to Sankaranarayanan!!! I can only imagine how much time you two have saved me.
+  post_url: /pidgin-and-lync-problem-solved/
+  post_id: "101"
+- id: "22829"
+  author_name: Frosch6669
+  author_email: handel@sigari.de
+  author_url: ""
+  published: 2017-09-12T13:02:02Z
+  parent_id: "0"
+  content: Thanks a lot, this was exactly my problem!
+  post_url: /pidgin-and-lync-problem-solved/
+  post_id: "101"
+- id: "23005"
+  author_name: Tom
+  author_email: tom@kuther.net
+  author_url: ""
+  published: 2017-11-14T09:44:58Z
+  parent_id: "0"
+  content: |-
+    IT WORKS!
+
+    Thank you so much for this. Finally the only Linux dude in our company doesn't force all others to use GoToMeeting for the release chats.
+  post_url: /pidgin-and-lync-problem-solved/
+  post_id: "101"
+- id: "23110"
+  author_name: Daniele
+  author_email: dpaganelli@tainstruments.com
+  author_url: ""
+  published: 2018-01-09T12:43:48Z
+  parent_id: "0"
+  content: "Worked for me after my company migrated from an on-site lync installation to a cloud installation. \nRemoved the login name and set the user agent: now it works again.\nThanks!!!"
+  post_url: /pidgin-and-lync-problem-solved/
+  post_id: "101"
+- id: "24847"
+  author_name: Nitish
+  author_email: nitish.markandeye@gmail.com
+  author_url: ""
+  published: 2018-10-24T18:05:52Z
+  parent_id: "0"
+  content: "for pidgin Version 1:2.12.0-1ub and pidgin-sipe version 1.23.3+sipe-. The best way to go forward is to \n1. Basic: Only Put the user name and password - Do Not Put in the Domain\\User\n2. Advanced: Leave Server:Port Blank. and add in User Agent as UCCAPI/16.0.6965.5308 OC/16.0.6965.2117\n3. Do Not Touch any other tabs"
+  post_url: /pidgin-and-lync-problem-solved/
+  post_id: "101"
+- id: "29128"
+  author_name: FMaciel
+  author_email: some@other.com
+  author_url: ""
+  published: 2019-07-11T20:01:48Z
+  parent_id: "24847"
+  content: Thatś work for me
+  post_url: /pidgin-and-lync-problem-solved/
+  post_id: "101"
+- id: "53091"
+  author_name: Barthezz
+  author_email: barthezzcz@gmail.com
+  author_url: ""
+  published: 2020-03-26T10:56:52Z
+  parent_id: "0"
+  content: |-
+    this was working for me :
+    UCCAPI/16.0.6001.1073 OC/16.0.6001.1073 (Skype for Business)
+  post_url: /pidgin-and-lync-problem-solved/
+  post_id: "101"
+- id: "92"
+  author_name: Mikhail Glushenkov
+  author_email: the.dead.shall.rise@gmail.com
+  author_url: ""
+  published: 2013-04-06T19:29:22Z
+  parent_id: "0"
+  content: "Nice tips. Some remarks:\n\nIn my experience, MSYS is preferable to Cygwin. I also usually add GHC_DIR\\mingw\\bin to PATH to avoid potential problems due to different versions of gcc. \n\nThe cabal upgrade issue has been fixed in the Git version of the Haskell Platform installer, I believe. %APPDATA%/cabal/bin is now put before %PLATFORM_DIR/bin% in PATH."
+  post_url: /haskell-on-windows/
+  post_id: "111"
+- id: "95"
+  author_name: cranej
+  author_email: crane.jin.l@gmail.com
+  author_url: http://chunhe.info
+  published: 2013-04-07T03:51:03Z
+  parent_id: "0"
+  content: Useful tips! Thanks for posting this.
+  post_url: /haskell-on-windows/
+  post_id: "111"
+- id: "103"
+  author_name: Stuart
+  author_email: smills@pukoasci.com
+  author_url: ""
+  published: 2013-04-08T21:57:40Z
+  parent_id: "0"
+  content: Thanks much.  I have also found that on Windows you may have to use older versions of packages than the most current (such as the repa package).
+  post_url: /haskell-on-windows/
+  post_id: "111"
+- id: "106"
+  author_name: John
+  author_email: foo@bar.baz
+  author_url: ""
+  published: 2013-04-09T08:52:20Z
+  parent_id: "0"
+  content: |-
+    http://msysgit.github.io/
+
+    This gives you git and msys in one go, so you can run configure scripts.  Makes things slightly less painful.
+  post_url: /haskell-on-windows/
+  post_id: "111"
+- id: "111"
+  author_name: Simon Peyton Jones
+  author_email: simonpj@microsoft.com
+  author_url: ""
+  published: 2013-04-11T09:57:00Z
+  parent_id: "0"
+  content: |-
+    Useful stuff. GHC on Windows needs more love.  Lots of people use GHC on Windows but somehow very few people are willing ot give much help and support.  You are an exception -- thank you.
+
+    A suggestion: would you feel like adding your insights to the GHC-on-Windows guidance page?
+    http://www.haskell.org/haskellwiki/Windows
+
+    It's a wiki so you can edit it yourself.  You could point to your blog post or (better for readers) just fold your stuff into the material already there.
+
+    It's linked from GHC's documentation page
+    http://www.haskell.org/haskellwiki/GHC
+    (though perhaps not prominently enough.
+
+    Thanks!
+
+    Simon
+  post_url: /haskell-on-windows/
+  post_id: "111"
+- id: "285"
+  author_name: ภาษาญี่ปุ่น
+  author_email: cathrynfarley@zoho.com
+  author_url: http://www.janywhere.com
+  published: 2013-07-08T07:59:04Z
+  parent_id: "0"
+  content: "Highly descriptive post, I liked that bit. Will there \nbe a part 2?"
+  post_url: /haskell-on-windows/
+  post_id: "111"
+- id: "9958"
+  author_name: Vassil Keremidchiev
+  author_email: varosi@gmail.com
+  author_url: ""
+  published: 2014-11-05T21:07:19Z
+  parent_id: "0"
+  content: |-
+    Hello everyone!
+
+    I don't know why Windows code should be treated differently. I think that call to withSocketsDo could be internally made on-demand basis or something like that.
+
+    This problem with paths for cabal install could be resolved into the Haskell Platform installer directly and no one will hit it in the future.
+  post_url: /haskell-on-windows/
+  post_id: "111"
+- id: "17527"
+  author_name: Frank Thermann
+  author_email: frank.thermann@gmail.com
+  author_url: http://www.ittakes.one
+  published: 2015-09-06T15:01:32Z
+  parent_id: "0"
+  content: Thanks for this, I was going out of my mind.. :)
+  post_url: /keyboard-language-suddenly-changing/
+  post_id: "119"
+- id: "17675"
+  author_name: Syed Razaq
+  author_email: rahil_scientist2u@yahoo.com
+  author_url: ""
+  published: 2015-09-14T16:19:28Z
+  parent_id: "0"
+  content: This had just happened to me now so I searched it and found this and it helped me. I already knew it was a keyboard shortcut but I just didn't know which one. So, thanks!
+  post_url: /keyboard-language-suddenly-changing/
+  post_id: "119"
+- id: "20452"
+  author_name: Nanda Kumar
+  author_email: koyickal@rediffmail.com
+  author_url: ""
+  published: 2016-04-05T09:10:58Z
+  parent_id: "0"
+  content: This was really helpful, thanks for sharing.
+  post_url: /keyboard-language-suddenly-changing/
+  post_id: "119"
+- id: "23034"
+  author_name: anony
+  author_email: anonymous@gmail.com
+  author_url: ""
+  published: 2017-11-29T17:00:44Z
+  parent_id: "0"
+  content: thank you so much!
+  post_url: /keyboard-language-suddenly-changing/
+  post_id: "119"
+- id: "23683"
+  author_name: Ais
+  author_email: aislingirwin@btinternet.com
+  author_url: ""
+  published: 2018-06-15T22:08:01Z
+  parent_id: "0"
+  content: Amazing, thank you, I was going mad till I discovered this post
+  post_url: /keyboard-language-suddenly-changing/
+  post_id: "119"
+- id: "25098"
+  author_name: Kalyan
+  author_email: kalyankesana@gmai.com
+  author_url: ""
+  published: 2018-11-13T07:03:58Z
+  parent_id: "0"
+  content: Many thanks thanks thanks :-). I have been struggling with this for long time.
+  post_url: /keyboard-language-suddenly-changing/
+  post_id: "119"
+- id: "25964"
+  author_name: Fritz Jörn
+  author_email: Fritz@Joern.De
+  author_url: http://www.Joern.De
+  published: 2019-01-29T17:51:19Z
+  parent_id: "0"
+  content: HTML etc. pages display nicely in chrome, but when I address a doc file in the web all I’m offered by chrome is a download, not an open with wird right away. Firefox is fine, however (about:preferences, settings, applications). Chrome, extensions, chrome apps, Docs won’t do. Fritz Jörn
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "27408"
+  author_name: jin
+  author_email: nij2223441@gmail.com
+  author_url: ""
+  published: 2019-04-01T12:12:28Z
+  parent_id: "0"
+  content: thank you ! suffer for a week from this, helped me a lot!
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "28950"
+  author_name: Mr. Worf
+  author_email: captainrikertitan@yahoo.ca
+  author_url: ""
+  published: 2019-07-03T16:20:57Z
+  parent_id: "0"
+  content: Thanks for sharing this information. It worked perfectly. No problems at all !!!
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "32409"
+  author_name: MaxVideoGame
+  author_email: contactus@maxvideogame.com
+  author_url: https://www.maxvideogame.com/
+  published: 2019-09-25T04:05:36Z
+  parent_id: "0"
+  content: Yeah, but if that happens for other users? How will they know to just go clear the Browsing Data? It works for the owner of the site but doesn't work for the other users right?
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "37762"
+  author_name: Elkassem Beknaoui
+  author_email: beknaouie@gmail.com
+  author_url: http://ssoug.com/
+  published: 2019-11-20T18:38:27Z
+  parent_id: "0"
+  content: |-
+    Please why download the page link when you click on it instead of displaying the note and you experience this problem in all chrome browsers
+     And fayrfox and Microsoft edge
+     At the same time on an Android mobile phone
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "38077"
+  author_name: melonstube
+  author_email: indiciKt@gmail.com
+  author_url: https://diendandulich.pro
+  published: 2019-11-24T12:59:57Z
+  parent_id: "0"
+  content: On Windows, this opens the file in Notepad. Would like to know how to read any.log from Chrome directly (as seen for any.txt files) Thyag Oct 6 '17 at 15:27
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "40472"
+  author_name: Vadoh
+  author_email: fadecruize@gmail.com
+  author_url: https://www.naijaprey.com.ng
+  published: 2019-12-18T14:46:13Z
+  parent_id: "0"
+  content: Thanks, it solved my problem
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "49001"
+  author_name: Lionel Messi
+  author_email: Tony@gmail.com
+  author_url: https://footballmagz.net
+  published: 2020-02-29T07:15:39Z
+  parent_id: "27408"
+  content: Thanks  issue fixed
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "49002"
+  author_name: Lionel Messi
+  author_email: Tony@gmail.com
+  author_url: https://footballmagz.net
+  published: 2020-02-29T07:16:46Z
+  parent_id: "0"
+  content: This gave a whole lot of headache. Fixed
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "61867"
+  author_name: Harshit
+  author_email: techbawaal@gmail.com
+  author_url: http://techbawaal.com
+  published: 2020-05-07T07:27:06Z
+  parent_id: "37762"
+  content: yes I am also facing the same issue in every browser and it is only occurring with my site. Don't know how to fix it.
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "62326"
+  author_name: Victor Ruiz
+  author_email: vcicrrp510@gmail.com
+  author_url: ""
+  published: 2020-05-09T05:46:10Z
+  parent_id: "0"
+  content: Doesn't work for me. Had to use Internet Explorer in order to download what I needed.
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "94958"
+  author_name: Naren Dhyani
+  author_email: naren.dhyani.29995@gmail.com
+  author_url: ""
+  published: 2020-10-01T17:19:11Z
+  parent_id: "0"
+  content: It started to happen to me as well, tried clearing my browser history. Still no luck, can someone help me understand why?
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "99520"
+  author_name: Raj
+  author_email: loversmania13@gmail.com
+  author_url: https://mytechtalky.com
+  published: 2020-10-22T13:29:43Z
+  parent_id: "0"
+  content: Thanks for the solution mate.
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "110802"
+  author_name: Goshiana
+  author_email: Webmaster@iconservices.biz
+  author_url: ""
+  published: 2020-12-16T04:21:49Z
+  parent_id: "0"
+  content: "Hi I'm facing the same problem as above\nCleared cache and cookies for all time \nYet not working \nPlease help. I need to my site to work."
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "116703"
+  author_name: Udayan Sikdar
+  author_email: udayan.sikdar@gmail.com
+  author_url: ""
+  published: 2021-01-12T09:45:23Z
+  parent_id: "0"
+  content: Thank You so much. This issue was really annoying.
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "122005"
+  author_name: Sebastian Soldan
+  author_email: if19b167@technikum-wien.at
+  author_url: ""
+  published: 2021-04-03T13:17:45Z
+  parent_id: "0"
+  content: Man you saved my day!!! Thanks a Lot! :)
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "123846"
+  author_name: Mahargha Mohanta
+  author_email: mahargha1234@gmail.com
+  author_url: https://theigadgets.com/
+  published: 2021-06-09T17:13:10Z
+  parent_id: "0"
+  content: thank you ! suffer for a week from this, helped me a lot!
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "123955"
+  author_name: Human 2.0
+  author_email: samuel.adisu@gmail.com
+  author_url: ""
+  published: 2021-06-11T16:16:23Z
+  parent_id: "0"
+  content: Thanks!!
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "124998"
+  author_name: Haribabu
+  author_email: Haribabu401@gmail.com
+  author_url: http://application
+  published: 2021-07-10T08:19:44Z
+  parent_id: "0"
+  content: "Hi All, \n\nProblem - File gets download when trying to access the webapplication.\n\nEven i have the same problem, In my case http requests are giving problem and https no issues , I using nginx reverse proxy..If someone can help here\nThanks"
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "125002"
+  author_name: Stephanie Rodgers
+  author_email: stephanie@alcody.com
+  author_url: https://thepcbuild.net/
+  published: 2021-07-10T13:12:07Z
+  parent_id: "0"
+  content: Thanks for sharing such useful information with us. I'm really glad to keep posting that.
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "127589"
+  author_name: amit
+  author_email: vijaymalviya299@gmail.com
+  author_url: https://wpseohosts.com
+  published: 2021-09-23T10:31:45Z
+  parent_id: "0"
+  content: Thanks you saved me, I wasted this two days for this solution. Finally got
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "128928"
+  author_name: Justin Turner
+  author_email: setupbeasts@gmail.com
+  author_url: https://setupbeasts.com/
+  published: 2021-10-30T05:48:33Z
+  parent_id: "0"
+  content: thanks. My problem is solved now.
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "132960"
+  author_name: Rodolfo
+  author_email: usd100k@gmail.com
+  author_url: http://unstuckyourlife.com
+  published: 2022-02-14T03:52:13Z
+  parent_id: "0"
+  content: Thank you!
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "133690"
+  author_name: Sukla
+  author_email: suklaghosh3@gmail.com
+  author_url: http://www.sayantanconsultants.com
+  published: 2022-02-25T17:06:10Z
+  parent_id: "0"
+  content: "I am facing this problem repeatedly, \n1.clear browser\n2.delete .htaccess file\n3.change the version of php\n\nThis problem I have facing many times, my question is that why this problem?"
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "138687"
+  author_name: Amira
+  author_email: amoraaliamora@gmail.com
+  author_url: ""
+  published: 2022-05-22T13:30:38Z
+  parent_id: "0"
+  content: u r the best..thaaaaaank you!!
+  post_url: /chrome-downloading-file-instead-of-displaying-page-solved/
+  post_id: "133"
+- id: "337"
+  author_name: 'Reducing the footprint of a #RaspberryPi | Raspberry PiPod'
+  author_email: ""
+  author_url: http://www.recantha.co.uk/blog/?p=5872
+  published: 2013-09-10T20:54:33Z
+  parent_id: "0"
+  content: '[&#8230;] Read the article [&#8230;]'
+  post_url: /raspberry-pi-making-it-slimmer/
+  post_id: "148"
+- id: "338"
+  author_name: 'Raspberry Pi: Making it slimmer | Gundersen.net &#8211; Elektronics for beginners and pro&#039;s'
+  author_email: ""
+  author_url: http://info.sweetpeas.se/?p=120
+  published: 2013-09-10T22:01:27Z
+  parent_id: "0"
+  content: '[&#8230;] Raspberry Pi: Making it slimmer | Gundersen.net. [&#8230;]'
+  post_url: /raspberry-pi-making-it-slimmer/
+  post_id: "148"
+- id: "339"
+  author_name: Gusto
+  author_email: bower39@yahoo.co.uk
+  author_url: ""
+  published: 2013-09-11T09:39:52Z
+  parent_id: "0"
+  content: |-
+    "I ended up fastening it to a wise"
+
+    Wise what?
+
+    Wise old owl?
+  post_url: /raspberry-pi-making-it-slimmer/
+  post_id: "148"
+- id: "360"
+  author_name: Trim the fat out of your Pi - Hackalizer
+  author_email: ""
+  author_url: http://hackalizer.com/trim-fat-pi/
+  published: 2013-09-26T10:49:20Z
+  parent_id: "0"
+  content: '[&#8230;] out the post on finn&#8217;s [&#8230;]'
+  post_url: /raspberry-pi-making-it-slimmer/
+  post_id: "148"
+- id: "367"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2013-10-22T12:11:04Z
+  parent_id: "339"
+  content: Thanks :) Fixed!
+  post_url: /raspberry-pi-making-it-slimmer/
+  post_id: "148"
+- id: "368"
+  author_name: William Payne
+  author_email: wtpayne@gmail.com
+  author_url: http://blog.wtpayne.info
+  published: 2013-10-22T13:38:23Z
+  parent_id: "0"
+  content: Yes, yes, and oh god, yes.
+  post_url: /functional-programming-hurdle-uninteresting-programs/
+  post_id: "164"
+- id: "369"
+  author_name: Keith Braithwaite
+  author_email: blog_comment@keithbraithwaite.demon.co.uk
+  author_url: http://peripateticaxiom.blogspot.com
+  published: 2013-10-22T18:39:35Z
+  parent_id: "0"
+  content: "You're exactly right, but I/O isn't really the right term (it opens the door to FP “devotees” saying that Haskell's ability to “abstract away” I/O is a huge win and then stop listening). It's really about integration. \n\nThe great hoards of developers out the world (hoards which are too big, because they work inefficiently in weak languages, certainly) are mainly involved in writing code that does very simple transformations, but which has to make the right transformations at the right time in the right order consistently (lazyness? Oh dear) on user input from these seven heterogenous, unreliable input channels, validated against reference data from these thirteen heterogenous data sources, wait for that mainframe to update, send an email to this repair queue, roll the response from the user there into the data, send the transformed data out to this random collection of unreliable, heterogenous channels, etc. etc. etc. And the upstream and downstream systems are changing all the time, and the rules about what transforms to do in what order are changing all the time, and so on.\n\nA very few (a lucky few) get to write a program which uses a complicated  algorithm to make a sophisticated transformation to some rich data, and banging on about how brilliantly Haskell can solve that problem is not going to impress anyone."
+  post_url: /functional-programming-hurdle-uninteresting-programs/
+  post_id: "164"
+- id: "370"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2013-10-22T18:48:58Z
+  parent_id: "369"
+  content: This comment is better than my post. I hope everyone reads it.
+  post_url: /functional-programming-hurdle-uninteresting-programs/
+  post_id: "164"
+- id: "371"
+  author_name: Keith Braithwaite
+  author_email: blog_comment@keithbraithwaite.demon.co.uk
+  author_url: http://peripateticaxiom.blogspot.com
+  published: 2013-10-22T19:03:59Z
+  parent_id: "370"
+  content: "Thanks. \n\nBefore I became a programmer I studied Physics and Maths, so my sympathies lie with functional programming, and I've even had some programming jobs where it would have helped a lot, but many more where elegant implementation of complicated functions is just so not the point. I believe that problems of that nature constitute the bulk of commercial programming.\n\nI'd love for FP to be the next big thing, but as currently formulated it doesn't seem to address enough of the day–to–day concerns of working programmers in ways which are compellingly better than what they have now (a depressingly low bar) to get any traction. We have at least now moved on from the world Monad tutorials which are much harder to understand than Monads are, but lengthy expositions on lenses aren't much of an improvement.\n\nBut what rankles me most is the all–to–common assertion by FP advocates that the problems I see teams deal with day in and day out in industry either don't exist, or if they do are irrelevant. Not the way to win friends and influence people."
+  post_url: /functional-programming-hurdle-uninteresting-programs/
+  post_id: "164"
+- id: "372"
+  author_name: Morten Brodersen
+  author_email: mb@mbrodersen.com
+  author_url: ""
+  published: 2013-10-23T03:28:46Z
+  parent_id: "0"
+  content: It is funny how history just keeps repeating itself. It took 35+ years for OO to become mainstream. And the funny thing is that what people call OO is not even OO (Google Alan Kay). What people use instead is "let's have a number of global states instead of only one - Oriented Programming" or "Place Oriented Programming" as the Clojure guy expresses it. Erlang is probably the only truly OO language available today. And the twist is that it is a functional language. How funny that is. Functional programming will absolutely become main stream. But it will take a long time. And so what? It doesn't stop you or your team or your biz from taking advantage of the technology today. You don't need to wait for the rest of the herd to catch up. The leading edge guys started using C while the rest of the world were still bashing away in Cobol. I can imagine the Cobol guys back then shaking their heads going "Why use C? No software is written in it. Cobol is what everybody use." All I can say is don't wait for the herd. Move ahead and be part of the next "C guys" and don't stay with the "Cobol guys". Any thinking/practical tool that makes you more productive today is a good thing :-)
+  post_url: /functional-programming-hurdle-uninteresting-programs/
+  post_id: "164"
+- id: "373"
+  author_name: Yitz Gale
+  author_email: gale@sefer.org
+  author_url: ""
+  published: 2013-10-23T03:51:17Z
+  parent_id: "369"
+  content: Keith - yes, absolutely. And don't forget the two or three specifications of 100 pages each that it all must comply with - supposedly, but not really. Still, a good type system does add a lot for this and all of the other issues you mentioned.
+  post_url: /functional-programming-hurdle-uninteresting-programs/
+  post_id: "164"
+- id: "380"
+  author_name: ja
+  author_email: jw_atwood@yahoo.com
+  author_url: ""
+  published: 2013-10-23T14:14:19Z
+  parent_id: "0"
+  content: 'Here''s a blog post about a company that''s using Haskell and Scala to handle those heterogenous, unreliable data sources, input and output  channels: http://janrain.com/blog/functional-programming-social-web'
+  post_url: /functional-programming-hurdle-uninteresting-programs/
+  post_id: "164"
+- id: "18000"
+  author_name: Francis Kim
+  author_email: hello@franciskim.co
+  author_url: https://franciskim.co
+  published: 2015-10-01T16:17:25Z
+  parent_id: "0"
+  content: I think you've summed up the problem really well to a non-functional programmer.
+  post_url: /functional-programming-hurdle-uninteresting-programs/
+  post_id: "164"
+- id: "18011"
+  author_name: Carl-Erik Kopseng
+  author_email: carlerik@gmail.com
+  author_url: http://oligofren.wordpress.com
+  published: 2015-10-02T09:27:26Z
+  parent_id: "0"
+  content: |-
+    This is so spot on. People who do their day to day work in language X, but wants to learn/use language Y, first really starts doing so once their day-to-day tasks is simple to do in language Y. And that often starts with a Google search and typing in some code you found on StackOverflow to hook up that Postgres database, or to set up that router for the web server. It does not start with "Learn you language Y for a greater good", good as that might be.
+
+    The stupid, mundane stuff must be easy to do, and there has to be reference code you can easily look to. The amount of easy to use libs and great documentation is what really has made it easy for people to start using Node, as a recent example.
+  post_url: /functional-programming-hurdle-uninteresting-programs/
+  post_id: "164"
+- id: "8763"
+  author_name: hard drive
+  author_email: darnelleldred@web.de
+  author_url: http://www.topexternalharddrive.com/
+  published: 2014-10-12T05:16:32Z
+  parent_id: "0"
+  content: "Quality posts is the important to invite the people to visit the web \npage, that's what this website is providing."
+  post_url: /quick-overview-intel-next-unit-of-computing/
+  post_id: "188"
+- id: "8083"
+  author_name: Wiggo
+  author_email: post@gundersen.net
+  author_url: http://www.gundersen.net
+  published: 2014-10-03T16:01:50Z
+  parent_id: "0"
+  content: Gleder meg til å prøve denne, men vil ikke ødelegge karamellpuddingen med å ha krem på....
+  post_url: /karamellpudding-sous-vide/
+  post_id: "198"
+- id: "11285"
+  author_name: stig
+  author_email: stigi@hotmail.com
+  author_url: ""
+  published: 2015-01-15T00:47:50Z
+  parent_id: "0"
+  content: Vell du har glemt å sile røren før du heller oppi formen. Samt at puddingen skal på 100 grader i 3 timer, da får den en glatt overflate på alle siden og man slipper luftbobler i karamellpuddingen.
+  post_url: /karamellpudding-sous-vide/
+  post_id: "198"
+- id: "11286"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2015-01-15T09:55:32Z
+  parent_id: "11285"
+  content: Dette er en sous-vide oppskrift, derfor annen (optimal) temperatur og kortere tid. Så lenge man rører eggene litt godt sammen trengs ingen siling. Det blir heller ingen luftbobler. Prøv og se :)
+  post_url: /karamellpudding-sous-vide/
+  post_id: "198"
+- id: "13640"
+  author_name: Arne Forslund Bakken
+  author_email: arneforslindbakken@gmail.com
+  author_url: http://hagenpaakleiva.net
+  published: 2015-04-09T04:52:54Z
+  parent_id: "0"
+  content: |-
+    Siler du eggeblandingen ser du eggenes "navlestrenger" (det forsvinner ikke ved god pisking)og en fagmann vil ikke ha det med i puddingen.
+    Takker for oppskriften som skal prøves!
+  post_url: /karamellpudding-sous-vide/
+  post_id: "198"
+- id: "11023"
+  author_name: Leandro
+  author_email: leandro.araujo@gmail.com
+  author_url: ""
+  published: 2014-12-05T13:09:53Z
+  parent_id: "0"
+  content: Your implementation it's the comes closest  that I found searching in the internet. But to my problem it's not quite sufficiently. My objects doesn't have the same width or css style. Do you found any other solution?
+  post_url: /keep-ipadiphone-ios-keyboard-up-between-input-fields/
+  post_id: "219"
+- id: "11026"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2014-12-05T14:34:22Z
+  parent_id: "11023"
+  content: Sure, just set the required properties whenever the field moves.
+  post_url: /keep-ipadiphone-ios-keyboard-up-between-input-fields/
+  post_id: "219"
+- id: "1814"
+  author_name: Pål S.
+  author_email: pschie@schie.com
+  author_url: ""
+  published: 2014-06-04T17:28:12Z
+  parent_id: "0"
+  content: |-
+    Hei.
+
+    Takk for fin blogg og nyttig informasjon om Altibox.
+
+    Det er noe jeg stusser over og det er "Har du kommet så langt som dette så får du til ruting av TV-signalet selv."
+
+    Trafikken fra media konverteren er VLAN tagget trafikk og det går TV,"Internett/data" og telefoni trafikk over kabelen som du kobler rett i WAN interfacet på pfSense boksen. Da må man route all trafikk gjennom pfsense boksen inklusive TV trafikk og du har kun et interface på innsiden som er konfigurert som en ren aksessport. Jeg ser ikke helt hvordan du skal få til dette. På ett eller annet sted i nettet må man ta ut minst to aksessporter. En til "data" og en til TV. Enten med flere interfacer på pfsense boksen eller en switch med støtte for VLAN.
+
+    Mitt forslag er å ta ut TV nettet/VLAN'et før pfsens boksen så den slipper unødvendig å prosessere TV trafikken og skape unødvendig mere konfig. Kjøpe en switch med støtte for VLAN og definere den ene porten som en VLAN trunk for 100, 101 og 102 som kobles til konverteren og definere en ren aksessport i VLAN 101 som man kobler til pfsense boksen. Så definere et eget VLAN for det interne nettet etc. Da kan man ta ut TV og andre porter helt etter behov.
+
+    Zyxel boksen til Altiboks er litt suspekt og hvilken tilstand den har i brigded modus. Det som gjør den suspekt er at man via et WEB grensesnitt kan enable og disable bridged modus. Det kan ikke være helt transparent i nettet siden man kan endre konfigen på den. Noe fishy er det med den og den kan sikkert med fordel fjernes slik at man ha en ren egen switch og en brannmur i en eller annen form (hvis ikke Altibox reagerer på at den er borte).
+
+    Pål S.
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "9495"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2014-10-22T23:50:49Z
+  parent_id: "1814"
+  content: Helt enig, VLAN-switch er best om du klarer deg med det. Men gjennom pfSense kan man også sende signalet videre, f.eks over et VPN til hytta.
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "10100"
+  author_name: Per L
+  author_email: p.livrud@gmail.com
+  author_url: ""
+  published: 2014-11-09T23:21:36Z
+  parent_id: "0"
+  content: "Hei, \n\nEn veldig bra blogg og mye nyttig informasjon. Har et lite problem som jeg sliter med å finne ut av. \n\nHar satt opp nøyaktig sånn som du har forklart det over, men har fortsatt problemer med å komme ut. Får bare kontakt med alt det jeg har internt. \n\nJeg har koblet modem direkte inn i Wan em1 og Lan em0 er koblet til en switch. Har også koblet accesspunktet til switchen vi Lan. \n\nModemet jeg har fra Altibox er Telsey."
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "10119"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2014-11-10T12:28:11Z
+  parent_id: "10100"
+  content: |-
+    Hei, oppskriften er for hvordan unngå å ha ruter fra Lyse, kun fiber-konverter. Telsey-boksen din er en ruter. Selv om du setter denne i bridge-modus så håndterer den fortsatt å hente ut internett-signalet og dermed fjerne VLAN-tagen.
+
+    Bare fjern VLAN innstillingen i pfSense, så er du i mål med PfSense som brannmur.
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "11282"
+  author_name: Tarjei
+  author_email: kaarfald@gmail.com
+  author_url: ""
+  published: 2015-01-13T12:46:05Z
+  parent_id: "0"
+  content: "Hei!\n\nTakk for en fin gjennomgang av oppsettet mot Altibox. Helt enig med det i at Altibox burde ha dokumentert dette bedre for de som vil gjøre det på denne måten. :)\nSitter med en Egderouter Lite og prøver å få den til å fungere med tv løsningen. (Internett spratt rett opp) \n\nHar du fått opp TV løsningen via pfSenseboksen? (uten splitting før boksen)?"
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "12580"
+  author_name: Pål Andreassen
+  author_email: paal.andreassen@gmail.com
+  author_url: ""
+  published: 2015-03-10T15:11:03Z
+  parent_id: "0"
+  content: "Får du IPv6 via 6rd å virke på pfSense 2.2 mot Altibox? \nJeg får det ikke til samma hva jeg forsøker."
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "12588"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2015-03-10T21:55:48Z
+  parent_id: "12580"
+  content: Har oppdatert posten nå, IPv6 fungerer som bare det.
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "13573"
+  author_name: David Steinsland
+  author_email: david@davidsteinsland.net
+  author_url: ""
+  published: 2015-04-06T23:49:45Z
+  parent_id: "0"
+  content: Er det mulig å bruke en managed switch eller noe istedenfor server med pfSense? Dvs. har du noen eksempler på slike switcher?
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "15052"
+  author_name: Carl J Hambro
+  author_email: carljohan.hambro@gmail.com
+  author_url: ""
+  published: 2015-05-19T23:31:02Z
+  parent_id: "13573"
+  content: Cisco SG 200 er en plass å begynne. Om du legger til 800kr kan du bytte ut hele fibermodemet i samme slengen vha storebroren SG 300.
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "15190"
+  author_name: Tommy Larsen
+  author_email: tommy@teknosat.no
+  author_url: ""
+  published: 2015-05-23T13:56:24Z
+  parent_id: "0"
+  content: |-
+    Tusen takk for informativ blogg!!
+
+    Jeg har et par spørsmål...
+
+    Jeg har et CPL7 modem, hvor det sitter en SFP modul i. Jeg har ikke egen medieconverter. Kan jeg ta ut denne modulen, og sette inn i en medieconverter? I så fall, er det bare å skaffe en hvilken som helst gigabit medieconverter?
+
+    Hva er egentlig fordelene med å velge IPv6 vs IPv4, om man allikevel har tenkt å kjøre et 192 LAN med NAT?
+
+    Takk på forhånd! :)
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "18813"
+  author_name: Harald
+  author_email: haavardsteen@gmail.com
+  author_url: ""
+  published: 2015-11-09T13:40:55Z
+  parent_id: "0"
+  content: "Hei, takk for et flott innlegg.\n\nJeg sliter med å få TV-signalet gjennom pfSense-boksen.  Har satt opp VLAN 101 mot samme grensesnitt som internettet (som fungerer utmerket), men får ikke trafikken ut på et dedikert kort.  \n\nKan du beskrive stegvis hvordan du fikk til dette?  Da blir innlegget komplett :)"
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "18814"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2015-11-09T14:23:47Z
+  parent_id: "18813"
+  content: Jeg har ikke hatt TV-signal på en stund, bruker bare internett, så jeg har ikke det konfigurert opp lenger.
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "19372"
+  author_name: kjhur
+  author_email: hurlen@broadpark.no
+  author_url: ""
+  published: 2015-12-08T23:54:34Z
+  parent_id: "0"
+  content: "Kjøpte meg ny Asus router RT-AC87U\nsatte opp på vanlig måte mot bridge Altibox router,\nendret iptv innstilinger (under LAN fliken) til manuell isp\nla inn 102 på internet \nkoblet bort Altibox routeren og koblet Asusen rett i fiber converteren (HET-3012)\n5 sek og den er oppe å kjøre på nett!\nregner med om man legger inn 101 på port 3 og 4 i oppsettet,.\nså går TV ut på port 3 og 4. Får ikke testet dette da jeg ikke har tv via fiber!\nMulig begge Multicast alternativene under spesielle innstilinger må aktiveres for TV"
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "21181"
+  author_name: Tommy
+  author_email: Ten@move.no
+  author_url: ""
+  published: 2016-06-24T08:41:13Z
+  parent_id: "0"
+  content: |-
+    Hei
+
+    Har du sett noen store endringer i latency ved å fjerne Zyxel modemet?
+
+    Mvh
+    Tommy
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "21182"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2016-06-24T10:05:45Z
+  parent_id: "21181"
+  content: Jeg målte ikke. Når jeg fjernet Zyxelmodemet var det mest for å ha en enhet mindre å forholde meg til.
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "21192"
+  author_name: Tommy
+  author_email: ten@move.no
+  author_url: ""
+  published: 2016-06-24T22:05:14Z
+  parent_id: "21182"
+  content: |-
+    OK, takk for svar.
+
+    Fjerner modemet imorgen tenkte jeg :)
+
+    Mvh
+    Tommy
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "21278"
+  author_name: Christian Torvetjønn
+  author_email: gspott85@gmail.com
+  author_url: ""
+  published: 2016-07-09T21:56:04Z
+  parent_id: "0"
+  content: "Noen som har funnet ut av hvordan man får TV i mellom her?\n\nHar en Pfsense box med xeon cpu og mb med 2x intel onboard nic. Fungerer perfekt ellers, men vil prøve å fjerne boksen bare for moroskyld.\nHar også en Linksys LGS318 i LAN på pfsense som støtter igmp snooping.\n\nHvordan kan jeg best sette opp dette? \nNoen tips?"
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "21370"
+  author_name: Harald
+  author_email: harald@tullemail.com
+  author_url: ""
+  published: 2016-08-07T00:24:48Z
+  parent_id: "21278"
+  content: |-
+    Denne fungerte bra hos meg:
+
+    https://freak.no/forum/showpost.php?p=3271943&amp;postcount=671
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "21660"
+  author_name: Anders
+  author_email: Thepostkass@gmail.com
+  author_url: ""
+  published: 2016-11-07T06:13:36Z
+  parent_id: "0"
+  content: Jeg skulle hatt altibox tv-signalene til hytta. Hvordan løses det enklest?
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "21728"
+  author_name: Kristian
+  author_email: kwalberg@gmail.com
+  author_url: ""
+  published: 2016-11-30T16:19:51Z
+  parent_id: "0"
+  content: |-
+    Det er vel flere som meg som sliter med å få opp TV via Pfsense vil jeg anta?
+    Har du noen god oppskrift på dette? Det er ikke bare å tagge med 101 og lage vlan tydeligvis.
+    Internett fungerer perfekt, men ikke TV.
+    IDeer?
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "21729"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2016-11-30T17:18:05Z
+  parent_id: "21728"
+  content: Tydeligvis, de har nok funnet på noe. Jeg fjerner kommentaren i blogpostemn som får det til å se lett ut.
+  post_url: /altibox-med-egen-ruter-med-pfsense/
+  post_id: "244"
+- id: "2451"
+  author_name: Lisa Reardon
+  author_email: LisaMReardon@rhyta.com
+  author_url: ""
+  published: 2014-07-25T17:15:00Z
+  parent_id: "0"
+  content: The DNS option is better than using a VPN regarding content streaming because you can achieve direct connection with the media station ex. hulu and avoid the “middle-man”. Personally, I am using UnoTelly which is similar to Unblock-us. Perhaps you should check UnoTelly as well if you haven’t done so.
+  post_url: /american-netflix-on-ipad-and-chromecast-without-vpn-using-pfsense/
+  post_id: "256"
+- id: "9497"
+  author_name: AJ
+  author_email: tobias.maier116@gmail.com
+  author_url: ""
+  published: 2014-10-23T00:38:55Z
+  parent_id: "0"
+  content: For a better understanding of how to use VPN or DNS Proxies to change/unblock American Netflix see https://thevpn.guru/netflix-proxy-region-how-to-change-dns-vpn
+  post_url: /american-netflix-on-ipad-and-chromecast-without-vpn-using-pfsense/
+  post_id: "256"
+- id: "13926"
+  author_name: Scarlett Snow
+  author_email: adele_samantha@yahoo.com
+  author_url: ""
+  published: 2015-04-17T13:34:34Z
+  parent_id: "0"
+  content: That’s a good article Finn. I personally prefer UnoTelly. It’s similar to Smart DNS Proxy but they offer a DNS server close to physical location and I can achieve better performance.
+  post_url: /american-netflix-on-ipad-and-chromecast-without-vpn-using-pfsense/
+  post_id: "256"
+- id: "20217"
+  author_name: Runkmaikkeli
+  author_email: Runkkari@hotmail.com
+  author_url: ""
+  published: 2016-03-17T21:18:10Z
+  parent_id: "13149"
+  content: Ehrmm is this a real person or is everyone here to spamlink their own "better than the rest" vpn..
+  post_url: /american-netflix-on-ipad-and-chromecast-without-vpn-using-pfsense/
+  post_id: "256"
+- id: "22470"
+  author_name: Abhainn
+  author_email: mckinley.kendrick@yahoo.com
+  author_url: ""
+  published: 2017-06-14T09:41:27Z
+  parent_id: "0"
+  content: Use VPN to unlock these restriction Its easy to install and use from pc, laptop and smartphones try https://www.onevpn.com/streaming-vpn/
+  post_url: /american-netflix-on-ipad-and-chromecast-without-vpn-using-pfsense/
+  post_id: "256"
+- id: "27581"
+  author_name: Kenneth
+  author_email: limawaken@aol.com
+  author_url: ""
+  published: 2019-04-14T03:12:07Z
+  parent_id: "0"
+  content: |-
+    I’m quite new to pfSense so blogs like yours were extremely helpful when I was getting started.
+    I had NAT rule set up and it used to work for me. Happily using my appletv with Getflix for several months. All of a sudden (maybe a couple of weeks ago) it doesn’t anymore.
+    I tried changing the source from the alias i had been using all this while to my device IP address but still didn’t work.
+
+    It seems like the NAT port forward rule is being ignored.
+    I wonder if it’s caused by a pfSense update? I’m using 2.4.4 release p2.
+    I wonder if it’s because the redirect target IP actually cannot be an external IP?
+
+    I’m kinda at a loss where to even start checking.
+    Device IP is not changed and I checked DHCP leases (device IP is static mapped)
+
+    Domain overrides works, but I want only specific devices to use the smartDNS server.
+  post_url: /american-netflix-on-ipad-and-chromecast-without-vpn-using-pfsense/
+  post_id: "256"
+- id: "29441"
+  author_name: Patrick
+  author_email: patrick@advisory.net
+  author_url: ""
+  published: 2019-07-27T14:06:16Z
+  parent_id: "27581"
+  content: You need to create aliases for the devices and then reference the alias when creating the rules.
+  post_url: /american-netflix-on-ipad-and-chromecast-without-vpn-using-pfsense/
+  post_id: "256"
+- id: "8165"
+  author_name: Gary
+  author_email: gary@ashton-jones.com.au
+  author_url: ""
+  published: 2014-10-04T09:50:53Z
+  parent_id: "0"
+  content: Is there a gcode file for the 4 LED soldering jig? Also are there gcode files for just one of each jig? At the moment all the gcode files print multiple copies of each jig. Or perhaps the STL files or something similar. Would really be helpful.
+  post_url: /charliecube/
+  post_id: "270"
+- id: "8166"
+  author_name: Gary
+  author_email: gary@ashton-jones.com.au
+  author_url: ""
+  published: 2014-10-04T09:55:00Z
+  parent_id: "0"
+  content: Just noticed the 4 LED soldering jig in file 4. But still multiple copies.
+  post_url: /charliecube/
+  post_id: "270"
+- id: "8754"
+  author_name: The Charlie Cube | Futuredraht
+  author_email: ""
+  author_url: http://www.futuredraht.de/the-charlie-cube/
+  published: 2014-10-11T23:11:23Z
+  parent_id: "0"
+  content: '[&#8230;] Fellow maker Finn Espen Gundersen did a detailed write-up on that project. [&#8230;]'
+  post_url: /charliecube/
+  post_id: "270"
+- id: "9027"
+  author_name: Gary
+  author_email: gary@ashton-jones.com.au
+  author_url: ""
+  published: 2014-10-15T10:47:35Z
+  parent_id: "0"
+  content: Never mind. I made my own .scad files of each part and put them on <a href="http://www.thingiverse.com/thing:501651" rel="nofollow">Thingiverse</a>. Maybe it will help someone.
+  post_url: /charliecube/
+  post_id: "270"
+- id: "9846"
+  author_name: Gary
+  author_email: gary@ashton-jones.com.au
+  author_url: ""
+  published: 2014-11-02T08:41:00Z
+  parent_id: "0"
+  content: The amber LED wired to pin D13 on the Arduino Nano causes leakage of voltage to other LEDs. My hack to fix it was to bend pin D13 on the Nano so it doesn't go in the socket hole, solder a wire from A5 pad to D13 pad (no longer connected to pin D13) and changed mappings.h definition for P12B to 0x00 and P12C to 0x20 (effectively replacing D13 with A5).
+  post_url: /charliecube/
+  post_id: "270"
+- id: "9851"
+  author_name: Kjetilei
+  author_email: kjetilei@outlook.com
+  author_url: ""
+  published: 2014-11-02T18:49:22Z
+  parent_id: "0"
+  content: |-
+    @Gary: Thanks for the info regarding D13 and voltage leakage and how you fixed it!
+
+    I'm sorry that we didn't publish the original Sketchup files/STLs (I was too tired when I sent the files to Finn and sent the gcode ones instead by mistake). But great that you made SCAD versions and published them :)
+
+    Where did you order your PCBs? Please post photos/videos "somewhere" when you are finished. It would be highly appreciated.
+  post_url: /charliecube/
+  post_id: "270"
+- id: "17776"
+  author_name: mike
+  author_email: mike222@gmail.com
+  author_url: ""
+  published: 2015-09-21T16:27:47Z
+  parent_id: "0"
+  content: hello, excuse me for being ignorant, but do i use common anode or common cathode LEDs? thanks!
+  post_url: /charliecube/
+  post_id: "270"
+- id: "14636"
+  author_name: jawrat
+  author_email: jawrat@hotmail.com
+  author_url: ""
+  published: 2015-05-08T23:08:43Z
+  parent_id: "0"
+  content: this is a great tutorial/howto, except you didn't point out how to generate the client cert/key pairs!  can you help?
+  post_url: /openvpn-server-on-freebsd-with-pf-firewall/
+  post_id: "306"
+- id: "14738"
+  author_name: jawrat
+  author_email: jawrat@hotmail.com
+  author_url: ""
+  published: 2015-05-11T16:46:31Z
+  parent_id: "0"
+  content: never mind, figured it out.  reading comprehension is hard when you are running on less than usual sleep :)
+  post_url: /openvpn-server-on-freebsd-with-pf-firewall/
+  post_id: "306"
+- id: "134679"
+  author_name: Kostiantyn
+  author_email: cherepovsky@gmail.com
+  author_url: ""
+  published: 2022-03-12T01:39:58Z
+  parent_id: "0"
+  content: |-
+    after allying of your vatiant of - /etc/pf.conf, I fully lost SSH access to the server. What can you suggest to recover?
+
+    &amp; tnx for the perfect text!
+  post_url: /openvpn-server-on-freebsd-with-pf-firewall/
+  post_id: "306"
+- id: "32677"
+  author_name: website
+  author_email: shane.price@wildmail.com
+  author_url: https://www.familyfirstfcu.org
+  published: 2019-09-28T18:46:57Z
+  parent_id: "0"
+  content: "Do you mind if I quote a few of your articles as long \nas I provide credit and sources back to your webpage?\nMy website is in the exact same area of interest as yours and \nmy visitors would really benefit from a lot of the information you provide here.\n\nPlease let me know if this ok with you. Appreciate it!"
+  post_url: /ssl-host-header-with-wildcard-certificate-on-iis7-explained/
+  post_id: "363"
+- id: "17906"
+  author_name: terminalcommand
+  author_email: terminalcommand@india.com
+  author_url: ""
+  published: 2015-09-28T00:59:31Z
+  parent_id: "0"
+  content: |-
+    Never underestimate the bandwidth of a station wagon full of tapes hurtling down the highway.
+    If it's practical, why not use it.
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17907"
+  author_name: Alec
+  author_email: Cheeseball701@gmail.com
+  author_url: ""
+  published: 2015-09-28T02:27:39Z
+  parent_id: "0"
+  content: Why don't you have the doctors' office format the floppies and send them back? They are rewritable. It would make you stock last longer.
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17909"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2015-09-28T08:59:19Z
+  parent_id: "17907"
+  content: We don't have the authority to request that. Also, floppies are not that hard to find yet, so it would be more expensive.
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17910"
+  author_name: Frank
+  author_email: ndaifrank@hotmail.com
+  author_url: ""
+  published: 2015-09-28T09:26:11Z
+  parent_id: "0"
+  content: |-
+    I haven't seen a floppy disk in 16 years, unbelievable story! :)
+
+    However there seems to be a trend of software 'getting older'. The software I wrote 10 years ago had a life expectency of 2-3 years. Now days processor speeds don't double every 1.5 years and people are just sattisfied with their office 2003 suite.
+
+    At this very moment I'm working on a 13 year old .NET codebase for a large company. It works and it will keep working for the coming years.
+
+    Software is becoming an ancient craf :)
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17911"
+  author_name: Sistemul informatic medical românesc e praf? - Ionuț Staicu
+  author_email: ""
+  author_url: http://blog.iamntz.com/8238/sistemul-informatic-medical-romanesc-e-praf
+  published: 2015-09-28T09:27:42Z
+  parent_id: "0"
+  content: '[&#8230;] românesc și despre ce erori minunate dă. Uite că în Norvegia încă se mai folosesc&#8230; dischete. [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17914"
+  author_name: Aivar
+  author_email: aivar.automyyk@gmail.com
+  author_url: ""
+  published: 2015-09-28T12:58:23Z
+  parent_id: "0"
+  content: |-
+    I have somewhat a meta-question... As patients are free to switch, the information in principle gets outdated as soon as it is extracted from the government system, so whats the use of this information?
+
+    Do doctors refuse to deal with patients not in their main list? Is it only about the number of available "slots" per doctor?
+
+    Also, whats the average month-on-month turnover, eg how many changes per doctor and how many doctors with no change in list?
+
+    P.S I DO hope the information on the floppy is somehow encrypted :D
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17919"
+  author_name: john
+  author_email: lienmeister@gmail.com
+  author_url: ""
+  published: 2015-09-28T15:26:00Z
+  parent_id: "0"
+  content: Hard to believe this stupidity comes from the same country that produced Abel, Sophus Lie and Magnus Carlsen.   I would start at the root of the problem and ditch socialized medicine.   Free up everything.
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17921"
+  author_name: Toni Lähdekorpi
+  author_email: toni@lygon.net
+  author_url: ""
+  published: 2015-09-28T15:59:08Z
+  parent_id: "17914"
+  content: |-
+    @Aivar
+    Maybe it doesn't need to be encrypted, it's good enough that it's on a floppy. Nobody can read those anymore anyways :D
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17927"
+  author_name: xurious
+  author_email: junk@xurious.com
+  author_url: ""
+  published: 2015-09-28T18:55:26Z
+  parent_id: "17906"
+  content: |-
+    IPoAC!
+
+    Imagine that same station wagon full of nicely packed 512GB SD cards...
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17928"
+  author_name: Norway&#039;s Doctors Still Use Floppy Disks, And They&#039;re More Secure Than the Alternative | SEO News | Technology News | Insurance News | Mecwan.com
+  author_email: ""
+  author_url: http://mecwan.com/norways-doctors-still-use-floppy-disks-and-theyre-more-secure-than-the-alternative/
+  published: 2015-09-28T18:57:52Z
+  parent_id: "0"
+  content: '[&#8230;] in place that still employs floppy disks&mdash;and it works extremely well. But a blog post on Gundersen.net says the Norwegian government might be retiring the floppy disk option as soon as next [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17929"
+  author_name: Norway&#039;s Doctors Still Use Floppy Disks, And They&#039;re More Secure Than the Alternative &raquo; Sangaré Mohamed
+  author_email: ""
+  author_url: http://www.sangare.eu/norways-doctors-still-use-floppy-disks-and-theyre-more-secure-than-the-alternative/
+  published: 2015-09-28T18:58:28Z
+  parent_id: "0"
+  content: '[&#8230;] in place that still employs floppy disks&mdash;and it works extremely well. But a blog post on Gundersen.net says the Norwegian government might be retiring the floppy disk option as soon as next [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17930"
+  author_name: Norway&#8217;s Doctors Still Use Floppy Disks, And They&#8217;re More Secure Than the Alternative | NewsNIM
+  author_email: ""
+  author_url: http://newsnim.com/norways-doctors-still-use-floppy-disks-and-theyre-more-secure-than-the-alternative
+  published: 2015-09-28T19:02:45Z
+  parent_id: "0"
+  content: '[&#8230;] a system in place that still employs floppy disks—and it works extremely well. But a blog post on Gundersen.net says the Norwegian government might be retiring the floppy disk option as soon as next [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17931"
+  author_name: Norway&#039;s Doctors Still Use Floppy Disks, And They&#039;re More Secure Than the Alternative - Enkiera
+  author_email: ""
+  author_url: http://enkiera.co.uk/norways-doctors-still-use-floppy-disks-and-theyre-more-secure-than-the-alternative/
+  published: 2015-09-28T19:13:49Z
+  parent_id: "0"
+  content: '[&#8230;] a system in place that still employs floppy disks—and it works extremely well. But a blog post on Gundersen.net says the Norwegian government might be retiring the floppy disk option as soon as next [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17933"
+  author_name: Norway&#039;s Doctors Still Use Floppy Disks, And They&#039;re More Secure Than the Alternative | Cubilete News
+  author_email: ""
+  author_url: http://cubilete.news/norways-doctors-still-use-floppy-disks-and-theyre-more-secure-than-the-alternative/
+  published: 2015-09-28T19:25:27Z
+  parent_id: "0"
+  content: '[&#8230;] a system in place that still employs floppy disks—and it works extremely well. But a blog post on Gundersen.net says the Norwegian government might be retiring the floppy disk option as soon as next [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17934"
+  author_name: Norway&#039;s Doctors Still Use Floppy Disks, And They&#039;re More Secure Than the Alternative | JogleApp
+  author_email: ""
+  author_url: http://www.jogleapp.co.uk/2015/09/28/norways-doctors-still-use-floppy-disks-and-theyre-more-secure-than-the-alternative/
+  published: 2015-09-28T19:47:22Z
+  parent_id: "0"
+  content: '[&#8230;] a system in place that still employs floppy disks—and it works extremely well. But a blog post on Gundersen.net says the Norwegian government might be retiring the floppy disk option as soon as next [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17938"
+  author_name: Sebastian
+  author_email: Sebastian.hilder@gmail.com
+  author_url: ""
+  published: 2015-09-28T21:02:35Z
+  parent_id: "0"
+  content: Wow, sounds like where i work... Which, funnily enough, is also in the public sector :) just, in another country... It's nice to see that it must be similar... Even with the ebcdic.. lol wut?
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17940"
+  author_name: Norway&#039;s Doctors Still Use Floppy Disks, And They&#039;re More Secure Than the Alternative | Media Flask
+  author_email: ""
+  author_url: http://www.mediaflask.net/2015/09/28/norways-doctors-still-use-floppy-disks-and-theyre-more-secure-than-the-alternative/
+  published: 2015-09-28T22:26:54Z
+  parent_id: "0"
+  content: '[&#8230;] a system in place that still employs floppy disks—and it works extremely well. But a blog post on Gundersen.net says the Norwegian government might be retiring the floppy disk option as soon as next [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17942"
+  author_name: world war | Norway&#8217;s Doctors Still Use Floppy Disks, And They&#8217;re More Secure Than the Alternative
+  author_email: ""
+  author_url: http://worldwarpress.biz/page-df9m7nkgdlh/
+  published: 2015-09-28T23:56:28Z
+  parent_id: "0"
+  content: '[&#8230;] in place that still employs floppy disks&mdash;and it works extremely well. But a blog post on Gundersen.net says the Norwegian government might be retiring the floppy disk option as soon as next [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17943"
+  author_name: Norway&#039;s Doctors Still Use Floppy Disks, And They&#039;re More Secure Than the Alternative | KaXtone.com
+  author_email: ""
+  author_url: http://www.kaxtone.com/norways-doctors-still-use-floppy-disks-and-theyre-more-secure-than-the-alternative/
+  published: 2015-09-29T00:21:55Z
+  parent_id: "0"
+  content: '[&#8230;] a system in place that still employs floppy disks—and it works extremely well. But a blog post on Gundersen.net says the Norwegian government might be retiring the floppy disk option as soon as next [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17944"
+  author_name: Ben
+  author_email: buttonpuncher@gmail.com
+  author_url: ""
+  published: 2015-09-29T01:54:29Z
+  parent_id: "0"
+  content: |-
+    "far less time-consuming to write to than a CD-ROM."
+
+    LOL!  Seriously?  With a 48X burner, I bet that I could write AND VERIFY at least 4-5 discs before a floppy drive can fill a floppy disc.  If you were using mini cd-r's, they would be more robust, lighter, and cost less to ship.
+
+    If some of the data is the same, you could burn hundreds of discs at a time with automated duplicators.
+
+    What an epic waste of time and taxpayer money.
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17945"
+  author_name: Norway's Doctors Still Use Floppy Disks, And They're More Secure Than The Alternative | Gizmodo Australia
+  author_email: ""
+  author_url: http://www.gizmodo.com.au/2015/09/norways-doctors-still-use-floppy-disks-and-theyre-more-secure-than-the-alternative/
+  published: 2015-09-29T05:47:50Z
+  parent_id: "0"
+  content: '[&#8230;] Gundersen.net, frankieleon / CC BY [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17946"
+  author_name: まだまだフロッピーディスクが現役で活躍する現場 | お金稼ぐNET
+  author_email: ""
+  author_url: http://okane-kasegu-net.sakura.ne.jp/post-0-659.html
+  published: 2015-09-29T09:43:45Z
+  parent_id: "0"
+  content: '[&#8230;]   Functional Floppy Disks ? in 2015 | Gundersen.net  https://gundersen.net/functional-floppy-disks-in-2015/   [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17948"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2015-09-29T10:08:06Z
+  parent_id: "17914"
+  content: Patients seldomly switch so the turnover is very low. If you switch to a new one and visit before he gets the update, he will just call to confirm.
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17949"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2015-09-29T10:09:05Z
+  parent_id: "17919"
+  content: A vast majority of the popluation in all scandinavian countries favour socialized medicine, it would be a tough sell to change that.
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17950"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2015-09-29T10:11:05Z
+  parent_id: "17944"
+  content: The data is all unique and the writes are 5-15 seconds depending on data size (i.e. number of patients). Even fast CD writers take some time spinning  up and down as well as doing lead-in and lead-out.
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17951"
+  author_name: Stein
+  author_email: stein.inge@embla.asia
+  author_url: ""
+  published: 2015-09-29T10:33:00Z
+  parent_id: "0"
+  content: Trust my doctor have a rainbow coloured floppy next time I visit him :-)
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17958"
+  author_name: Ernesto
+  author_email: ernestocastico@gmail.com
+  author_url: ""
+  published: 2015-09-29T13:10:11Z
+  parent_id: "0"
+  content: I find hard to believe that you can't manage email attachments up to 1.44 Mb  :o
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17961"
+  author_name: Region Sparks
+  author_email: regionsparks@pears.com
+  author_url: ""
+  published: 2015-09-29T16:04:39Z
+  parent_id: "17919"
+  content: |-
+    Only America has enough freedom for ambulance bills and to bankrupt the sick.
+
+    The rest of the world is quite happy as we are thanks.
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17963"
+  author_name: Kingflathead
+  author_email: matt@saunier.us
+  author_url: ""
+  published: 2015-09-29T19:50:04Z
+  parent_id: "0"
+  content: 'Evil Overlord Rule #99: Any data file of crucial importance will be padded to 1.45Mb in size.'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17973"
+  author_name: digi_owl
+  author_email: kemarken@broadpark.no
+  author_url: ""
+  published: 2015-09-30T09:20:07Z
+  parent_id: "17919"
+  content: |-
+    It is a "market" approximation, introduced in recent years, that necessitate this.
+
+    Earlier you just went to the doctor that was on call at the time.
+
+    Now you instead pick a doctor you stick with, in part to give a competitive incentive to the other doctors to step up their service quality (the thinking is some kind of off-shot of New Public Management).
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17974"
+  author_name: digi_owl
+  author_email: kemarken@broadpark.no
+  author_url: ""
+  published: 2015-09-30T09:20:58Z
+  parent_id: "17950"
+  content: Would this be the case even if one employed something like packet writing?
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17975"
+  author_name: digi_owl
+  author_email: kemarken@broadpark.no
+  author_url: ""
+  published: 2015-09-30T09:25:00Z
+  parent_id: "17958"
+  content: |-
+    The problem is not the data, it is the software in use at the doctor end.
+
+    It is DOS based, and thus likely don't have the first clue about anything beyond A: B: C: drives.
+
+    Also, to do this via email would require an encryption infrastructure.
+
+    Physical mail instead employ sealed envelopes and signature/id on delivery.
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "17980"
+  author_name: Functional floppy disks – in 2015 | Terry Madeley
+  author_email: ""
+  author_url: http://terrymadeley.co.uk/2015/09/30/functional-floppy-disks-in-2015/
+  published: 2015-09-30T12:12:33Z
+  parent_id: "0"
+  content: '[&#8230;] Functional floppy disks – in 2015 https://gundersen.net/functional-floppy-disks-in-2015/ [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "18016"
+  author_name: Norway&#8217;s doctors are still using floppy disks—and they work great. - Quartz
+  author_email: ""
+  author_url: http://qz.com/515800/norways-doctors-are-still-using-floppy-disks-and-they-work-great/
+  published: 2015-10-02T17:01:05Z
+  parent_id: "0"
+  content: '[&#8230;] an end: Finn Espen Gunderson, a government contractor working on the floppy distribution program, writes on his blog (h/t Gizmodo) that Norway is ending its support of floppy disks next year, forcing any doctors who [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "18035"
+  author_name: neoteny
+  author_email: neoteny@freemail.hu
+  author_url: ""
+  published: 2015-10-03T05:20:15Z
+  parent_id: "17948"
+  content: If turnover is very low, then why is mostly unchanged info being sent out to thousands of doctors monthly? Why isn't just the changed info being sent out?
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "18041"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2015-10-03T09:39:34Z
+  parent_id: "18035"
+  content: There is nothing to gain by sending changes only. The floppy can hold it all. Sending everything also means every floppy is self-contained, after vacation just read the last one.
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "18044"
+  author_name: neoteny
+  author_email: neoteny@freemail.hu
+  author_url: ""
+  published: 2015-10-03T11:08:40Z
+  parent_id: "17948"
+  content: |-
+    Sure there is something to be gained: not sending out the majority of the floppies, i.e. all of those ones which contain unchanged data.
+
+    There are approx. 4,500 GPs in Norway. If in a given month there are 500 GPs whose patient list changes (after all, "patients seldomly switch so the turnover is very low"), then it is unnecessary to send out the other 4,000 (~90%) floppies with the unchanged patient lists.
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "18113"
+  author_name: Médicos noruegos aún utilizan disquetes | Selecta 102.7 FMSelecta 102.7 FM
+  author_email: ""
+  author_url: http://selectafm.com/sitio/medicos-noruegos-aun-utilizan-disquetes/
+  published: 2015-10-06T23:36:17Z
+  parent_id: "0"
+  content: '[&#8230;] El disquete permanece en uso en Noruega debido, especialmente, a su costo, casi inexistente si se compara con el de un USB y porque consume menos tiempo al copiar datos que un CD-ROM, según explica Gundersen.net. [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "18171"
+  author_name: Awesome Possum
+  author_email: spam@getmail.no
+  author_url: ""
+  published: 2015-10-09T00:01:55Z
+  parent_id: "17975"
+  content: The health authorities have had a PKI for communicating with doctors in place for at least a decade. I used to manage it back then. The doctors have (as you note) staunchly refused to update the software. Not so much because they love their MS DOS, but because they expect the government to foot the bill for upgrades.
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "18310"
+  author_name: Phil
+  author_email: i.gecko@me.com
+  author_url: http://phirst.me
+  published: 2015-10-13T16:05:33Z
+  parent_id: "0"
+  content: I hear that 3.5" flopped make excellent ice scrapers for car windscreens, a tool that's also especially important in Norway...
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "18841"
+  author_name: Quan l&#8217;obsolescència no pot vèncer l&#8217;amor | Aniol Maria
+  author_email: ""
+  author_url: http://www.nuvol.com/opinio/quan-lobsolescencia-no-pot-vencer-lamor/
+  published: 2015-11-11T20:15:21Z
+  parent_id: "0"
+  content: '[&#8230;] notícia original provenia de Gundersen.net, i explicava que a Noruega els pacients poden triar a quin metge volen anar i el directori amb [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "19767"
+  author_name: La curiosa historia de por qué los médicos en Noruega siguen utilizando disquetes |
+  author_email: ""
+  author_url: https://torretech.wordpress.com/2016/01/11/la-curiosa-historia-de-por-que-los-medicos-en-noruega-siguen-utilizando-disquetes/
+  published: 2016-01-12T02:45:53Z
+  parent_id: "0"
+  content: '[&#8230;] explican desde Gundersen.net, equipo responsable de desarrollar el sistema de disquetes que maneja el gobierno noruego con los [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "19897"
+  author_name: Logan
+  author_email: legendster.earthian@gmail.com
+  author_url: ""
+  published: 2016-01-22T09:18:44Z
+  parent_id: "17909"
+  content: Can you sell around 6000 - 8000 of floppies to me ?
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "19983"
+  author_name: Healthcare supplier loses 950,000 patient records | GovInsider
+  author_email: ""
+  author_url: https://govinsider.asia/digital-gov/healthcare-supplier-loses-950000-patient-records/
+  published: 2016-01-27T11:29:40Z
+  parent_id: "0"
+  content: '[&#8230;] meanwhile, still uses floppy disks to store patient records because a loss would have a minimal impact, in comparison to larger [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "20205"
+  author_name: From Floppy to Cloud – The Growing Importance of Logistics in the Cloud | Inventory &amp; Supply Chain Optimization
+  author_email: ""
+  author_url: http://www.inventory-and-supplychain-blog.com/from-floppy-to-cloud-the-growing-importance-of-logistics-in-the-cloud/
+  published: 2016-03-14T09:09:04Z
+  parent_id: "0"
+  content: '[&#8230;] information about seat reservations via floppy disk in the trains. Furthermore, up until last year, patient data in Norway was sent on a floppy disk per mail to public authorities. I would expect to see even [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "21957"
+  author_name: From Floppy to Cloud – The Growing Importance of Logistics in the Cloud &#8211; Inventory &amp; Supply Chain Optimization
+  author_email: ""
+  author_url: http://www.allthingssupplychain.com/from-floppy-to-cloud-the-growing-importance-of-logistics-in-the-cloud/
+  published: 2017-02-01T16:15:53Z
+  parent_id: "0"
+  content: '[&#8230;] information about seat reservations via floppy disk in the trains. Furthermore, up until last year, patient data in Norway was sent on a floppy disk per mail to public authorities. I would expect to see even [&#8230;]'
+  post_url: /functional-floppy-disks-in-2015/
+  post_id: "385"
+- id: "21995"
+  author_name: Håvard
+  author_email: haavard.hanssen@gmail.com
+  author_url: ""
+  published: 2017-02-20T08:54:26Z
+  parent_id: "0"
+  content: |-
+    Would you not be better off with some ~10W embedded and fanless Atom box running pfSense for this? A lot more to tinker with anyway, and upgradeable with next-gen WiFi by replacing just adapter or external AP. Initial cost could also be comparable to these higher-end plastic consumer boxes.
+
+    To the point and assuming a powercycling fixes both of the issues, a dirty but quite effective remedy would be to put a cheap electronic timer between socket and PSU, programming it to switch off for a minute every morning at 5 AM...
+
+    Greetings from Oslo :)
+  post_url: /solved-asus-4g-ac55u-randomly-going-offline/
+  post_id: "418"
+- id: "21999"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2017-02-21T15:30:26Z
+  parent_id: "21995"
+  content: pfSense is great. But the Asus box has good 4G antenna sensitivity. A random box with pfSense would need a 4G adapter with external antenna. And a lot more time to set up properly compared to an out of the box product. Sometimes tinkering is fun, sometimes you just want stuff to work.
+  post_url: /solved-asus-4g-ac55u-randomly-going-offline/
+  post_id: "418"
+- id: "22213"
+  author_name: Hakim
+  author_email: ahakimb@gmail.com
+  author_url: ""
+  published: 2017-04-05T16:31:52Z
+  parent_id: "0"
+  content: |-
+    Hello,
+
+    For me the problem persist for the routing table :/
+    Any other idea ?
+  post_url: /solved-asus-4g-ac55u-randomly-going-offline/
+  post_id: "418"
+- id: "22233"
+  author_name: Timo Lock
+  author_email: request@timelock.in
+  author_url: http://www.timelock.in
+  published: 2017-04-08T15:15:37Z
+  parent_id: "0"
+  content: |-
+    Finn Espen Gundersen, you are my hero. Looks like with your help i could repair the bug of my Asus.
+
+    Thanks a lot.
+
+    Timo
+  post_url: /solved-asus-4g-ac55u-randomly-going-offline/
+  post_id: "418"
+- id: "22292"
+  author_name: Tomas Heed
+  author_email: tomas.heed@gmail.com
+  author_url: http://tomasheed.com
+  published: 2017-04-13T18:00:06Z
+  parent_id: "0"
+  content: |-
+    I tried your suggestions, but it didn't help me. My Asus 4G-AC55U looses it's connection at times and it won't return until I reset the router manually. Finally I bought a Raspberry Pi and a Tellstick Duo and connected it all to a Nexa remote controlled power switch. Then I wrote a program that polls the Internet and if the connection is lost I toggle the Nexa socket.
+
+    If someone is interested I wrote a small description of my setup on my web page: http://tomasheed.com/2017/04/tellstick-duo-raspberry-pi/
+  post_url: /solved-asus-4g-ac55u-randomly-going-offline/
+  post_id: "418"
+- id: "22663"
+  author_name: Djamel
+  author_email: djamel.benamar@gmail.com
+  author_url: ""
+  published: 2017-08-07T14:57:52Z
+  parent_id: "0"
+  content: "Hello All, \n\ni have the same issue with the AC55U.\nI'm losing the connection often and by telnet i'm reseting the 4G DHCP. \n\nudhcp -u usb0 /renew\n\nseem that the router cannot get the new ip when the provider change it.\n\nnot sure about the routing table. could you check with my cmd and keep me posted if it's work.\n \nthx \nregards.."
+  post_url: /solved-asus-4g-ac55u-randomly-going-offline/
+  post_id: "418"
+- id: "22664"
+  author_name: Djamel
+  author_email: djamel.benamar@gmail.com
+  author_url: ""
+  published: 2017-08-07T15:00:45Z
+  parent_id: "0"
+  content: udhcp -i usb0 /renew (sorry my bad)
+  post_url: /solved-asus-4g-ac55u-randomly-going-offline/
+  post_id: "418"
+- id: "24047"
+  author_name: Fufs
+  author_email: Ktosinnynizja@gmail.com
+  author_url: ""
+  published: 2018-08-15T08:12:22Z
+  parent_id: "22213"
+  content: A micro controller with Wi-Fi that would power cycle the router after internet connection is lost?
+  post_url: /solved-asus-4g-ac55u-randomly-going-offline/
+  post_id: "418"
+- id: "29202"
+  author_name: rhug
+  author_email: rhug178@gmail.com
+  author_url: ""
+  published: 2019-07-15T11:38:46Z
+  parent_id: "0"
+  content: Nice conversation.I solved my Asus problem too
+  post_url: /solved-asus-4g-ac55u-randomly-going-offline/
+  post_id: "418"
+- id: "37351"
+  author_name: Thor
+  author_email: taarhaug@gmail.com
+  author_url: ""
+  published: 2019-11-16T20:00:43Z
+  parent_id: "0"
+  content: |-
+    I believe the 4G-AC55U became stable with the M14 MODEM firmware update: Version 3.0.0.4_380_8102_M14
+
+    Thor
+  post_url: /solved-asus-4g-ac55u-randomly-going-offline/
+  post_id: "418"
+- id: "41542"
+  author_name: Andy
+  author_email: Anders.vennergrund@gmail.com
+  author_url: ""
+  published: 2019-12-29T00:53:18Z
+  parent_id: "0"
+  content: |-
+    Thanks Finn and Thor!
+
+    I had not relaized that i had to "manualy" update the modem part of the router.  See link below
+    https://www.asus.com/se/Networking/4G-AC55U/HelpDesk_BIOS/
+
+    Did speed test before and after updating from M12 to M14 and this showed an significant decreas in downlink speed and increas in uplink speed after the update despite several powercycles of router.  Is this seen by others as well?
+
+    Is there any known way of rebooting the modem part thru command line interface?  The modem seems to need a powercycle to come out of its bad state. Hopefully M14 will fix issue  thou...
+    //Andy
+  post_url: /solved-asus-4g-ac55u-randomly-going-offline/
+  post_id: "418"
+- id: "40639"
+  author_name: John
+  author_email: computerrx@yahoo.com
+  author_url: ""
+  published: 2019-12-20T15:23:13Z
+  parent_id: "0"
+  content: This looks very interesting.  Are you using the Gateway to control the switch? Did the modification take a long time?  I'd be interested in contacting you about making my on hacked switch.  Thanks for the info.
+  post_url: /ikea-tradfri-garage-opener/
+  post_id: "454"
+- id: "40640"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2019-12-20T15:53:55Z
+  parent_id: "40639"
+  content: I am using an ordinary switch as well as the gateway to control it, either way works. The mod itself is not too time-consuming, but it is a hassle to separate the top part from the bottom. Take care not to cut yourself as you work along the edge with a knife.
+  post_url: /ikea-tradfri-garage-opener/
+  post_id: "454"
+- id: "79497"
+  author_name: Santtu
+  author_email: san@ttu.fi
+  author_url: ""
+  published: 2020-07-23T09:37:13Z
+  parent_id: "0"
+  content: "Tack så mycket! I have been searching solution like this. \n \nHälsningar från Finland. \n\nSanttu"
+  post_url: /ikea-tradfri-garage-opener/
+  post_id: "454"
+- id: "106056"
+  author_name: csab
+  author_email: media@csobay.hu
+  author_url: ""
+  published: 2020-11-18T23:04:28Z
+  parent_id: "0"
+  content: Thanks, really nice! Did the same, works really well! I am using a smartthings hub and was able to set an automation to turn off then switch 10s later it was switched on, so no need to double switch.
+  post_url: /ikea-tradfri-garage-opener/
+  post_id: "454"
+- id: "126396"
+  author_name: Ben
+  author_email: Ben.verlinden@gmail.com
+  author_url: ""
+  published: 2021-08-28T14:58:20Z
+  parent_id: "0"
+  content: I recently applied this mod, thx to the good explanation it works! Many thanks, I was looking for a (zigbee) solution for my garagedoor but didn't find any plug-and-play on the market. Before this I modded a wifi (wofea) tuya by flashing it with tasmota but my config was not perfect. When loosing the wifi connection or after a powerloss the garagedoor opened automatic. Very anoying when it is night or when we were not at home...
+  post_url: /ikea-tradfri-garage-opener/
+  post_id: "454"
+- id: "118641"
+  author_name: Svein Tore
+  author_email: sveintore@gmail.com
+  author_url: ""
+  published: 2021-01-21T12:27:00Z
+  parent_id: "0"
+  content: Will you try this on yout X1 Nano? :)
+  post_url: /replacing-thermal-paste-on-lenovo-x1-carbon-to-reduce-temp-fan-noise-and-cpu-throttling/
+  post_id: "484"
+- id: "118651"
+  author_name: Finn Espen Gundersen
+  author_email: finn@gundersen.net
+  author_url: ""
+  published: 2021-01-21T12:59:15Z
+  parent_id: "118641"
+  content: In time, I will :) So far, it works fine.
+  post_url: /replacing-thermal-paste-on-lenovo-x1-carbon-to-reduce-temp-fan-noise-and-cpu-throttling/
+  post_id: "484"
+- id: "121031"
+  author_name: Darren G
+  author_email: dalgibbard@gmail.com
+  author_url: ""
+  published: 2021-02-23T11:39:08Z
+  parent_id: "0"
+  content: |-
+    What the... who did that original paste job? It's everywhere!
+
+    Less certainly is more. Unless your day job is putting Lenovo laptops together at a factory apparently.
+  post_url: /replacing-thermal-paste-on-lenovo-x1-carbon-to-reduce-temp-fan-noise-and-cpu-throttling/
+  post_id: "484"
+- id: "9378"
+  author_name: Lars Skogstad
+  author_email: larsaskogstad@hotmail.com
+  author_url: http://n/a
+  published: 2014-10-21T21:32:06Z
+  parent_id: "0"
+  content: "Hei.\n\nHar fulgt din guide vedr. oppsett til altibox via pfsense.\n\nHar en Alix apu1c ( linitx.com ) som jeg setter opp på.\n\nwww.n3c.no/1.jpg\nwww.n3c.no/2.jpg\nwww.n3c.no/3.jpg\n\nHar et spørsmål, jeg får ikke tv-signalet til å komme opp uansett hva jeg gjør.\n\nHar kablet nett på alt, tven er på port 3, setter VLAN101 på tv men får ikke opp noe signal uansett hva jeg gjør.. \n\nHar du noen anelse om hva jeg gjør feil? \n\nMvh\n\nLars Skogstad\n\n( vet ikke hvor ellers jeg skal spørre ) .. \n\nlarsaskogstad@hotmail.com / 922 52 151"
+  post_url: /about/
+  post_id: "17"

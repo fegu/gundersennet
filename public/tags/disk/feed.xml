@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Disk on Gundersen.net</title>
+    <link>http://localhost:1313/tags/disk/</link>
+    <description>Recent content in Disk on Gundersen.net</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 10 Nov 2013 22:42:26 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/disk/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quick Overview: Intel Next Unit of Computing</title>
+      <link>http://localhost:1313/quick-overview-intel-next-unit-of-computing/</link>
+      <pubDate>Sun, 10 Nov 2013 22:42:26 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=188</guid> 
+      <description>&lt;p&gt;Intel is pushing a new form factor, the Next Unit of Computing (NUC), and it is looking good. I recently got two of these and have some pictures and experiences to share.&lt;/p&gt;
+&lt;p&gt;The NUCs have some exciting properties and a couple of gotchas, read on and avoid my mistakes.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;NUC box&#34; loading=&#34;lazy&#34; src=&#34;//gundersen.net/wp-content/uploads/2013/11/NUC-box.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;First of all the box itself has a small surprise. When it opens it plays the Intel jingle from some embedded electronics with a light-sensor and a speaker. Oh, the humanity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>More SSD space: how I got an extra 13GB free</title>
+      <link>http://localhost:1313/more-ssd-space-how-i-got-an-extra-13gb/</link>
+      <pubDate>Thu, 03 Jan 2013 11:52:30 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=88</guid> 
+      <description>&lt;p&gt;SSDs are great (except &lt;a href=&#34;//gundersen.net/solid-state-drives-the-best-of-drives-the-worst-of-drives/&#34; title=&#34;Solid State Drives: the best of drives, the worst of drives&#34;&gt;they can also be the worst of drives&lt;/a&gt;), but they usually have less capacity than modern conventional drives. In 2013, 128GB is still a common size, and even a 256GB drive can only hold so much. At the same time, main memory is increasing and 8GB of RAM is quite common.&lt;/p&gt;
+&lt;p&gt;The increasing main memory will often reserve unnecessary space on your drive for hibernation and paging. This  guide shows how to reclaim that space on Windows 7 and Windows 8 (but should work for any windows with minimal changes).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Solid State Drives: the best of drives, the worst of drives</title>
+      <link>http://localhost:1313/solid-state-drives-the-best-of-drives-the-worst-of-drives/</link>
+      <pubDate>Wed, 04 Jul 2012 18:45:20 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=4</guid> 
+      <description>&lt;p&gt;There is no denying that solid state hard drives have a lot of advantages. They are fast, silent and runs cooler than ordinary drives. But when they fail, they fail hard. Really hard.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;//gundersen.net/wp-content/uploads/2012/07/ssd2.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The Intel 160GB SSD stock drive in my Lenovo T420s failed in May 2012, less than one year after the manufacturing date. And when I say failed, I mean it. The laptop suddenly responded slowly, then after a few seconds completely froze, gave a blue-screen and died. It would not reboot.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

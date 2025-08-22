@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Functions on Gundersen.net</title>
+    <link>http://localhost:1313/tags/functions/</link>
+    <description>Recent content in Functions on Gundersen.net</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 25 Mar 2020 11:23:05 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/functions/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solved: Azure Function &#34;Publish Failed&#34; from Visual Studio 2017</title>
+      <link>http://localhost:1313/solved-azure-function-publish-failed-from-visual-studio-2017/</link>
+      <pubDate>Wed, 25 Mar 2020 11:23:05 +0000</pubDate>
+       <guid isPermaLink="false">https://gundersen.net/?p=475</guid> 
+      <description>&lt;p&gt;The &amp;ldquo;Publishing failed&amp;rdquo; error message will make you feel cursed. It appears when publishing an Azure serverless Function directly from Visual Studio 2017. Some never see it, but those who do can&amp;rsquo;t seem to get rid of it.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2020/03/publishfailed%5F450px.png&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;I tried all the recommended internet forum voodoo of creating new deployment profiles, restarting Visual Studio, cleaning the project and downloading deployment profiles. If it did go away for once, it always came back.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

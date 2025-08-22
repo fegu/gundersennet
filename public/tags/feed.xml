@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Gundersen.net</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Gundersen.net</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 30 Jan 2021 23:38:49 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.Net</title>
+      <link>http://localhost:1313/tags/.net/</link>
+      <pubDate>Sat, 30 Jan 2021 23:38:49 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/.net/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Asp.net</title>
+      <link>http://localhost:1313/tags/asp.net/</link>
+      <pubDate>Sat, 30 Jan 2021 23:38:49 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/asp.net/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Browser-Capabilities</title>
+      <link>http://localhost:1313/tags/browser-capabilities/</link>
+      <pubDate>Sat, 30 Jan 2021 23:38:49 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/browser-capabilities/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Browsercaps</title>
+      <link>http://localhost:1313/tags/browsercaps/</link>
+      <pubDate>Sat, 30 Jan 2021 23:38:49 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/browsercaps/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>C#</title>
+      <link>http://localhost:1313/tags/c%23/</link>
+      <pubDate>Sat, 30 Jan 2021 23:38:49 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/c%23/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Chrome</title>
+      <link>http://localhost:1313/tags/chrome/</link>
+      <pubDate>Sat, 30 Jan 2021 23:38:49 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/chrome/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Lenovo</title>
+      <link>http://localhost:1313/tags/lenovo/</link>
+      <pubDate>Sat, 16 Jan 2021 17:33:52 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/lenovo/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Thinkpad</title>
+      <link>http://localhost:1313/tags/thinkpad/</link>
+      <pubDate>Sat, 16 Jan 2021 17:33:52 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/thinkpad/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>X1</title>
+      <link>http://localhost:1313/tags/x1/</link>
+      <pubDate>Sat, 16 Jan 2021 17:33:52 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/x1/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>X1-Nano</title>
+      <link>http://localhost:1313/tags/x1-nano/</link>
+      <pubDate>Sat, 16 Jan 2021 17:33:52 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/x1-nano/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Carbon</title>
+      <link>http://localhost:1313/tags/carbon/</link>
+      <pubDate>Sun, 03 Jan 2021 23:00:06 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/carbon/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Cpu-Throttling</title>
+      <link>http://localhost:1313/tags/cpu-throttling/</link>
+      <pubDate>Sun, 03 Jan 2021 23:00:06 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/cpu-throttling/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Fan-Noise</title>
+      <link>http://localhost:1313/tags/fan-noise/</link>
+      <pubDate>Sun, 03 Jan 2021 23:00:06 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/fan-noise/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Hot</title>
+      <link>http://localhost:1313/tags/hot/</link>
+      <pubDate>Sun, 03 Jan 2021 23:00:06 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/hot/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Thermal-Paste</title>
+      <link>http://localhost:1313/tags/thermal-paste/</link>
+      <pubDate>Sun, 03 Jan 2021 23:00:06 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/thermal-paste/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>X1-Carbon</title>
+      <link>http://localhost:1313/tags/x1-carbon/</link>
+      <pubDate>Sun, 03 Jan 2021 23:00:06 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/x1-carbon/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Azure</title>
+      <link>http://localhost:1313/tags/azure/</link>
+      <pubDate>Wed, 25 Mar 2020 11:23:05 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/azure/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Functions</title>
+      <link>http://localhost:1313/tags/functions/</link>
+      <pubDate>Wed, 25 Mar 2020 11:23:05 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/functions/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Serverless</title>
+      <link>http://localhost:1313/tags/serverless/</link>
+      <pubDate>Wed, 25 Mar 2020 11:23:05 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/serverless/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Visual-Studio</title>
+      <link>http://localhost:1313/tags/visual-studio/</link>
+      <pubDate>Wed, 25 Mar 2020 11:23:05 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/visual-studio/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Garage</title>
+      <link>http://localhost:1313/tags/garage/</link>
+      <pubDate>Sat, 28 Sep 2019 18:20:20 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/garage/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Hack</title>
+      <link>http://localhost:1313/tags/hack/</link>
+      <pubDate>Sat, 28 Sep 2019 18:20:20 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/hack/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Ikea</title>
+      <link>http://localhost:1313/tags/ikea/</link>
+      <pubDate>Sat, 28 Sep 2019 18:20:20 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/ikea/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Iot</title>
+      <link>http://localhost:1313/tags/iot/</link>
+      <pubDate>Sat, 28 Sep 2019 18:20:20 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/iot/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Mod</title>
+      <link>http://localhost:1313/tags/mod/</link>
+      <pubDate>Sat, 28 Sep 2019 18:20:20 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/mod/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Modification</title>
+      <link>http://localhost:1313/tags/modification/</link>
+      <pubDate>Sat, 28 Sep 2019 18:20:20 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/modification/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Relay</title>
+      <link>http://localhost:1313/tags/relay/</link>
+      <pubDate>Sat, 28 Sep 2019 18:20:20 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/relay/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Smarthome</title>
+      <link>http://localhost:1313/tags/smarthome/</link>
+      <pubDate>Sat, 28 Sep 2019 18:20:20 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/smarthome/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Trådfri</title>
+      <link>http://localhost:1313/tags/tr%C3%A5dfri/</link>
+      <pubDate>Sat, 28 Sep 2019 18:20:20 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/tr%C3%A5dfri/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Zigbee</title>
+      <link>http://localhost:1313/tags/zigbee/</link>
+      <pubDate>Sat, 28 Sep 2019 18:20:20 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/zigbee/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Dell</title>
+      <link>http://localhost:1313/tags/dell/</link>
+      <pubDate>Wed, 07 Jun 2017 21:55:44 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/dell/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Drac</title>
+      <link>http://localhost:1313/tags/drac/</link>
+      <pubDate>Wed, 07 Jun 2017 21:55:44 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/drac/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Drac5</title>
+      <link>http://localhost:1313/tags/drac5/</link>
+      <pubDate>Wed, 07 Jun 2017 21:55:44 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/drac5/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Hardware</title>
+      <link>http://localhost:1313/tags/hardware/</link>
+      <pubDate>Wed, 07 Jun 2017 21:55:44 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/hardware/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>http://localhost:1313/tags/java/</link>
+      <pubDate>Wed, 07 Jun 2017 21:55:44 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/java/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Poweredge</title>
+      <link>http://localhost:1313/tags/poweredge/</link>
+      <pubDate>Wed, 07 Jun 2017 21:55:44 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/poweredge/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Remote-Management</title>
+      <link>http://localhost:1313/tags/remote-management/</link>
+      <pubDate>Wed, 07 Jun 2017 21:55:44 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/remote-management/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Server</title>
+      <link>http://localhost:1313/tags/server/</link>
+      <pubDate>Wed, 07 Jun 2017 21:55:44 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/server/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>3g</title>
+      <link>http://localhost:1313/tags/3g/</link>
+      <pubDate>Sun, 13 Nov 2016 13:31:45 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/3g/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>4g</title>
+      <link>http://localhost:1313/tags/4g/</link>
+      <pubDate>Sun, 13 Nov 2016 13:31:45 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/4g/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Ac55u</title>
+      <link>http://localhost:1313/tags/ac55u/</link>
+      <pubDate>Sun, 13 Nov 2016 13:31:45 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/ac55u/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Asus</title>
+      <link>http://localhost:1313/tags/asus/</link>
+      <pubDate>Sun, 13 Nov 2016 13:31:45 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/asus/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Bug</title>
+      <link>http://localhost:1313/tags/bug/</link>
+      <pubDate>Sun, 13 Nov 2016 13:31:45 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/bug/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Coverage</title>
+      <link>http://localhost:1313/tags/coverage/</link>
+      <pubDate>Sun, 13 Nov 2016 13:31:45 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/coverage/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Firmware</title>
+      <link>http://localhost:1313/tags/firmware/</link>
+      <pubDate>Sun, 13 Nov 2016 13:31:45 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/firmware/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Lte</title>
+      <link>http://localhost:1313/tags/lte/</link>
+      <pubDate>Sun, 13 Nov 2016 13:31:45 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/lte/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Offline</title>
+      <link>http://localhost:1313/tags/offline/</link>
+      <pubDate>Sun, 13 Nov 2016 13:31:45 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/offline/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Signal</title>
+      <link>http://localhost:1313/tags/signal/</link>
+      <pubDate>Sun, 13 Nov 2016 13:31:45 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/signal/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>3.5&#34;</title>
+      <link>http://localhost:1313/tags/3.5/</link>
+      <pubDate>Sun, 27 Sep 2015 20:12:02 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/3.5/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Floppy</title>
+      <link>http://localhost:1313/tags/floppy/</link>
+      <pubDate>Sun, 27 Sep 2015 20:12:02 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/floppy/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Functional-Programming</title>
+      <link>http://localhost:1313/tags/functional-programming/</link>
+      <pubDate>Sun, 27 Sep 2015 20:12:02 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/functional-programming/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Government</title>
+      <link>http://localhost:1313/tags/government/</link>
+      <pubDate>Sun, 27 Sep 2015 20:12:02 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/government/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Certificate</title>
+      <link>http://localhost:1313/tags/certificate/</link>
+      <pubDate>Mon, 02 Mar 2015 13:49:05 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/certificate/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Https</title>
+      <link>http://localhost:1313/tags/https/</link>
+      <pubDate>Mon, 02 Mar 2015 13:49:05 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/https/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Iis</title>
+      <link>http://localhost:1313/tags/iis/</link>
+      <pubDate>Mon, 02 Mar 2015 13:49:05 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/iis/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Iis7</title>
+      <link>http://localhost:1313/tags/iis7/</link>
+      <pubDate>Mon, 02 Mar 2015 13:49:05 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/iis7/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Ssl</title>
+      <link>http://localhost:1313/tags/ssl/</link>
+      <pubDate>Mon, 02 Mar 2015 13:49:05 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/ssl/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Wildcard</title>
+      <link>http://localhost:1313/tags/wildcard/</link>
+      <pubDate>Mon, 02 Mar 2015 13:49:05 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/wildcard/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>http://localhost:1313/tags/windows/</link>
+      <pubDate>Mon, 02 Mar 2015 13:49:05 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/windows/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Windows-Server</title>
+      <link>http://localhost:1313/tags/windows-server/</link>
+      <pubDate>Mon, 02 Mar 2015 13:49:05 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/windows-server/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Freebsd</title>
+      <link>http://localhost:1313/tags/freebsd/</link>
+      <pubDate>Mon, 03 Nov 2014 22:04:26 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/freebsd/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Openvpn</title>
+      <link>http://localhost:1313/tags/openvpn/</link>
+      <pubDate>Mon, 03 Nov 2014 22:04:26 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/openvpn/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Pf</title>
+      <link>http://localhost:1313/tags/pf/</link>
+      <pubDate>Mon, 03 Nov 2014 22:04:26 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/pf/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Vpn</title>
+      <link>http://localhost:1313/tags/vpn/</link>
+      <pubDate>Mon, 03 Nov 2014 22:04:26 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/vpn/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Unreal-Tournament</title>
+      <link>http://localhost:1313/tags/unreal-tournament/</link>
+      <pubDate>Sun, 19 Oct 2014 13:56:19 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/unreal-tournament/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Arduino</title>
+      <link>http://localhost:1313/tags/arduino/</link>
+      <pubDate>Sun, 24 Aug 2014 19:45:48 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/arduino/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Charliecube</title>
+      <link>http://localhost:1313/tags/charliecube/</link>
+      <pubDate>Sun, 24 Aug 2014 19:45:48 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/charliecube/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Electronics</title>
+      <link>http://localhost:1313/tags/electronics/</link>
+      <pubDate>Sun, 24 Aug 2014 19:45:48 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/electronics/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Makerspace</title>
+      <link>http://localhost:1313/tags/makerspace/</link>
+      <pubDate>Sun, 24 Aug 2014 19:45:48 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/makerspace/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Soldering</title>
+      <link>http://localhost:1313/tags/soldering/</link>
+      <pubDate>Sun, 24 Aug 2014 19:45:48 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/soldering/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Pfsense</title>
+      <link>http://localhost:1313/tags/pfsense/</link>
+      <pubDate>Mon, 14 Apr 2014 13:04:16 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/pfsense/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Altibox</title>
+      <link>http://localhost:1313/tags/altibox/</link>
+      <pubDate>Sun, 06 Apr 2014 13:54:25 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/altibox/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Hp-Microserver</title>
+      <link>http://localhost:1313/tags/hp-microserver/</link>
+      <pubDate>Sun, 06 Apr 2014 13:54:25 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/hp-microserver/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Ipv6</title>
+      <link>http://localhost:1313/tags/ipv6/</link>
+      <pubDate>Sun, 06 Apr 2014 13:54:25 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/ipv6/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Ios</title>
+      <link>http://localhost:1313/tags/ios/</link>
+      <pubDate>Sun, 29 Dec 2013 00:47:18 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/ios/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Ios7</title>
+      <link>http://localhost:1313/tags/ios7/</link>
+      <pubDate>Sun, 29 Dec 2013 00:47:18 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/ios7/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Ipad</title>
+      <link>http://localhost:1313/tags/ipad/</link>
+      <pubDate>Sun, 29 Dec 2013 00:47:18 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/ipad/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Iphone</title>
+      <link>http://localhost:1313/tags/iphone/</link>
+      <pubDate>Sun, 29 Dec 2013 00:47:18 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/iphone/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>http://localhost:1313/tags/javascript/</link>
+      <pubDate>Sun, 29 Dec 2013 00:47:18 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/javascript/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>http://localhost:1313/tags/programming/</link>
+      <pubDate>Sun, 29 Dec 2013 00:47:18 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/programming/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Jul</title>
+      <link>http://localhost:1313/tags/jul/</link>
+      <pubDate>Sun, 22 Dec 2013 21:36:52 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/jul/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Karamellpudding</title>
+      <link>http://localhost:1313/tags/karamellpudding/</link>
+      <pubDate>Sun, 22 Dec 2013 21:36:52 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/karamellpudding/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Sous-Vide</title>
+      <link>http://localhost:1313/tags/sous-vide/</link>
+      <pubDate>Sun, 22 Dec 2013 21:36:52 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/sous-vide/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Disk</title>
+      <link>http://localhost:1313/tags/disk/</link>
+      <pubDate>Sun, 10 Nov 2013 22:42:26 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/disk/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Hard-Disk</title>
+      <link>http://localhost:1313/tags/hard-disk/</link>
+      <pubDate>Sun, 10 Nov 2013 22:42:26 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/hard-disk/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Hard-Drive</title>
+      <link>http://localhost:1313/tags/hard-drive/</link>
+      <pubDate>Sun, 10 Nov 2013 22:42:26 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/hard-drive/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Hdd</title>
+      <link>http://localhost:1313/tags/hdd/</link>
+      <pubDate>Sun, 10 Nov 2013 22:42:26 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/hdd/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Intel</title>
+      <link>http://localhost:1313/tags/intel/</link>
+      <pubDate>Sun, 10 Nov 2013 22:42:26 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/intel/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Msata</title>
+      <link>http://localhost:1313/tags/msata/</link>
+      <pubDate>Sun, 10 Nov 2013 22:42:26 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/msata/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Nuc</title>
+      <link>http://localhost:1313/tags/nuc/</link>
+      <pubDate>Sun, 10 Nov 2013 22:42:26 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/nuc/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Ssd</title>
+      <link>http://localhost:1313/tags/ssd/</link>
+      <pubDate>Sun, 10 Nov 2013 22:42:26 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/ssd/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Fp</title>
+      <link>http://localhost:1313/tags/fp/</link>
+      <pubDate>Tue, 22 Oct 2013 11:25:04 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/fp/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Raspberry-Pi</title>
+      <link>http://localhost:1313/tags/raspberry-pi/</link>
+      <pubDate>Fri, 06 Sep 2013 18:18:17 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/raspberry-pi/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Cache</title>
+      <link>http://localhost:1313/tags/cache/</link>
+      <pubDate>Mon, 17 Jun 2013 19:22:44 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/cache/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Compile</title>
+      <link>http://localhost:1313/tags/compile/</link>
+      <pubDate>Mon, 17 Jun 2013 19:22:44 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/compile/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Sql-Server</title>
+      <link>http://localhost:1313/tags/sql-server/</link>
+      <pubDate>Fri, 14 Jun 2013 11:21:03 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/sql-server/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Windows-8</title>
+      <link>http://localhost:1313/tags/windows-8/</link>
+      <pubDate>Fri, 14 Jun 2013 11:21:03 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/windows-8/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Haskell</title>
+      <link>http://localhost:1313/tags/haskell/</link>
+      <pubDate>Sat, 06 Apr 2013 13:17:07 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/haskell/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Lync</title>
+      <link>http://localhost:1313/tags/lync/</link>
+      <pubDate>Tue, 26 Mar 2013 21:38:18 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/lync/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Microsoft</title>
+      <link>http://localhost:1313/tags/microsoft/</link>
+      <pubDate>Tue, 26 Mar 2013 21:38:18 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/microsoft/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Office365</title>
+      <link>http://localhost:1313/tags/office365/</link>
+      <pubDate>Tue, 26 Mar 2013 21:38:18 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/office365/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Pidgin</title>
+      <link>http://localhost:1313/tags/pidgin/</link>
+      <pubDate>Tue, 26 Mar 2013 21:38:18 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/pidgin/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Sip</title>
+      <link>http://localhost:1313/tags/sip/</link>
+      <pubDate>Tue, 26 Mar 2013 21:38:18 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/sip/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Support</title>
+      <link>http://localhost:1313/tags/support/</link>
+      <pubDate>Tue, 26 Mar 2013 21:38:18 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/support/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>32bit</title>
+      <link>http://localhost:1313/tags/32bit/</link>
+      <pubDate>Sat, 08 Sep 2012 17:58:11 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/32bit/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>64bit</title>
+      <link>http://localhost:1313/tags/64bit/</link>
+      <pubDate>Sat, 08 Sep 2012 17:58:11 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/64bit/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Amd64</title>
+      <link>http://localhost:1313/tags/amd64/</link>
+      <pubDate>Sat, 08 Sep 2012 17:58:11 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/amd64/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>I386</title>
+      <link>http://localhost:1313/tags/i386/</link>
+      <pubDate>Sat, 08 Sep 2012 17:58:11 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/i386/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Jail</title>
+      <link>http://localhost:1313/tags/jail/</link>
+      <pubDate>Sat, 08 Sep 2012 17:58:11 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/jail/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Proliant-Hp-Server-Microserver-Low-Noise</title>
+      <link>http://localhost:1313/tags/proliant-hp-server-microserver-low-noise/</link>
+      <pubDate>Mon, 16 Jul 2012 13:44:30 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/proliant-hp-server-microserver-low-noise/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Microsim-Sim-Mobile</title>
+      <link>http://localhost:1313/tags/microsim-sim-mobile/</link>
+      <pubDate>Mon, 16 Jul 2012 12:26:55 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/microsim-sim-mobile/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Microsim-Sim-Telehuset-Mobil</title>
+      <link>http://localhost:1313/tags/microsim-sim-telehuset-mobil/</link>
+      <pubDate>Tue, 10 Jul 2012 13:17:35 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/microsim-sim-telehuset-mobil/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Gaming</title>
+      <link>http://localhost:1313/tags/gaming/</link>
+      <pubDate>Wed, 04 Jul 2012 19:57:40 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/gaming/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Teeworlds</title>
+      <link>http://localhost:1313/tags/teeworlds/</link>
+      <pubDate>Wed, 04 Jul 2012 19:57:40 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/teeworlds/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Backup</title>
+      <link>http://localhost:1313/tags/backup/</link>
+      <pubDate>Wed, 04 Jul 2012 18:45:20 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/backup/</guid> 
+      <description></description>
+    </item>
+    <item>
+      <title>Crash</title>
+      <link>http://localhost:1313/tags/crash/</link>
+      <pubDate>Wed, 04 Jul 2012 18:45:20 +0000</pubDate>
+       <guid isPermaLink="false">http://localhost:1313/tags/crash/</guid> 
+      <description></description>
+    </item>
+  </channel>
+</rss>

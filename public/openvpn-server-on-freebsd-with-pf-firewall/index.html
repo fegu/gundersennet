@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>OpenVPN server on FreeBSD with pf firewall | Gundersen.net</title>
+<meta name="keywords" content="freebsd, openvpn, pf, vpn">
+<meta name="description" content="FreeBSD 10, with the new and improved packet filter/firewall pf, and OpenVPN are all great products. But I had a not so great time making them play together - especially with a Windows 8 client. As with everything, it is easy when you know how.
+Most OpenVPN examples seem to be using the tap interface and ethernet bridging. To keep things simple, I wanted to go with the default ip-routed tun interface. Apart from being default, thus requiring less config fiddling, it fits nicely with pf and requires one less kernel module.">
+<meta name="author" content="wpgundersen">
+<link rel="canonical" href="http://localhost:1313/openvpn-server-on-freebsd-with-pf-firewall/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.3beea2776320e39a6c8d0589cd10cf4cbbbe3ca9b6f0363cfeef1417ed39a195.css" integrity="sha256-O&#43;6id2Mg45psjQWJzRDPTLu&#43;PKm28DY8/u8UF&#43;05oZU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/openvpn-server-on-freebsd-with-pf-firewall/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Gundersen.net (Alt + H)">Gundersen.net</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      OpenVPN server on FreeBSD with pf firewall
+    </h1>
+    <div class="post-meta"><span title='2014-11-03 22:04:26 +0000 +0000'>November 3, 2014</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;wpgundersen
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/wp-content/uploads/2014/11/OpenVPN_BSDs.png" alt="OpenVPN OpenBSD FreeBSD">
+        
+</figure>
+  <div class="post-content"><p>FreeBSD 10, with the new and improved packet filter/firewall pf, and OpenVPN are all great products. But I had a not so great time making them play together - especially with a Windows 8 client. As with everything, it is easy when you know how.</p>
+<p>Most OpenVPN examples seem to be using the tap interface and ethernet bridging. To keep things simple, I wanted to go with the default ip-routed tun interface. Apart from being default, thus requiring less config fiddling, it fits nicely with pf and requires one less kernel module.</p>
+<p>After making it all play together, I also wanted the connecting clients to access the internet through the VPN connection, necessitating some routing. The last step is not necessary if all the resources the VPN clients will need are on the server itself. A similar step will be required if the clients should access other servers close to the VPN entry-point.</p>
+<p>The steps outlined here should also work on FreeBSD 9.</p>
+<h2 id="preparing-certificates">Preparing certificates<a hidden class="anchor" aria-hidden="true" href="#preparing-certificates">#</a></h2>
+<p>Installing is as easy as</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>pkg install openvpn
+</span></span></code></pre></div><p>But before we can go ahead and start it, we need keys and certificates. Decide on somewhere to keep the server&rsquo;s private keys and other crucial files, I opted for</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mkdir /root/sslCA
+</span></span><span style="display:flex;"><span>chmod 700 /root/sslCA
+</span></span></code></pre></div><p>This needs to be put in /etc/ssl/openssl.cnf as</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>dir            = /root/sslCA    # Where everything is kept
+</span></span></code></pre></div><p>OpenSSL also requires some folders and a serial number</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cd /root/sslCA
+</span></span><span style="display:flex;"><span>mkdir certs private newcerts
+</span></span><span style="display:flex;"><span>echo 1024 &gt; serial
+</span></span><span style="display:flex;"><span>touch index.txt
+</span></span></code></pre></div><p>Then, let&rsquo;s generate the 10 year Certificate Authority which will be used to sign the certificates</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>openssl req -new -x509 -days 3650 -extensions v3_ca -keyout private/cakey.pem -out cacert.pem -config /etc/ssl/openssl.cnf
+</span></span></code></pre></div><p>OK, that authority can now sign the server certificate. This is a two-step process where we first generate a request for a certificate, then the actual certificate. Note that while you can put almost anything in the fields when asked, you will need at least a common name for each, and the organization must be the same for both certificates.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>openssl req -new -nodes -out server.req -keyout private/server.key -config /etc/ssl/openssl.cnf
+</span></span><span style="display:flex;"><span>openssl ca -out server.crt -infiles server.req -config /etc/ssl/openssl.cnf
+</span></span></code></pre></div><p>Answer yes [y] where asked.</p>
+<p>If you want to use password-based authentication for the clients, these are all the certificates you need. But if you want certificate based authentication, then each client will also need a certificate. Just create another request and certificate in the same manner, but with &ldquo;server&rdquo; replaced by &ldquo;client&rdquo;. You will need to copy those files (and the CA cert) to the client later.</p>
+<p>The last piece of the plumbing puzzle is the random Diffie-Hellman parameters.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>openssl dhparam -out dh1024.pem 1024
+</span></span></code></pre></div><h2 id="configure-openvpn">Configure OpenVPN<a hidden class="anchor" aria-hidden="true" href="#configure-openvpn">#</a></h2>
+<p>We will base our config on the sample file, so copy it first.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cp /usr/local/share/examples/openvpn/sample-config.files/server.conf /usr/local/etc/openvpn/openvpn.conf
+</span></span></code></pre></div><p>Most settings are defaults. In particular we avoid some work with tap and bridges since we are using a tunneled ip routed interface. But we need to tell OpenVPN where we put everything. Look for the lines in openvpn.conf starting with ca, cert, key and dh.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ca   /root/sslCA/cacert.pem
+</span></span><span style="display:flex;"><span>cert /root/sslCA/server.crt
+</span></span><span style="display:flex;"><span>key  /root/sslCA/private/server.key
+</span></span><span style="display:flex;"><span>dh   /root/sslCA/dh1024.pem
+</span></span></code></pre></div><p>If you want the client to use the VPN as the default gateway, i.e. not only to access server resources, but perhaps also to surf the web, you will need to put these two lines either in the server or client config. You will also need some routing, see below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>push &#34;redirect-gateway def1 bypass.dhcp&#34;
+</span></span><span style="display:flex;"><span>push &#34;dhcp-option DNS 8.8.8.8&#34;
+</span></span></code></pre></div><p>If you want the clients to be able to see each other, uncomment the line</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>client-to-client
+</span></span></code></pre></div><p>Now, prepare to run by adding to /etc/rc.conf:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>openvpn_enable=&#34;YES&#34;
+</span></span><span style="display:flex;"><span>openvpn_config=&#34;/usr/local/etc/openvpn/openvpn.conf&#34;
+</span></span></code></pre></div><p>And then, ignition:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>/usr/local/etc/rc.d/openvpn start
+</span></span></code></pre></div><h2 id="routing">Routing<a hidden class="anchor" aria-hidden="true" href="#routing">#</a></h2>
+<p>If all you want is for the clients to access the server, no routing is necessary. If you don&rsquo;t already have pf (or another firewall) enabled, consider yourself done with the server setup. However, if you have a firewall and/or want the clients to access the internet, or other servers in your LAN, you are in for  some pf magic.</p>
+<p>The packet filter pf just recently got SMP support in FreeBSD. It perfectly illustrates how the FreeBSD community values performance, now having a faster port than the native OpenBSD version. If only we could port the &ldquo;match&rdquo; functionality as well.</p>
+<p>Type ifconfig and identify the name of your network interfaces.</p>
+<p>create a file /etc/pf.conf containing</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># default openvpn settings for the client network
+</span></span><span style="display:flex;"><span>vpnclients = &#34;10.8.0.0/24&#34;
+</span></span><span style="display:flex;"><span>#put your wan interface here (it will almost certainly be different)
+</span></span><span style="display:flex;"><span>wanint = &#34;vtnet0&#34;
+</span></span><span style="display:flex;"><span># put your tunnel interface here, it is usually tun0
+</span></span><span style="display:flex;"><span>vpnint = &#34;tun0&#34;
+</span></span><span style="display:flex;"><span># OpenVPN by default runs on udp port 1194
+</span></span><span style="display:flex;"><span>udpopen = &#34;{1194}&#34;
+</span></span><span style="display:flex;"><span>icmptypes = &#34;{echoreq, unreach}&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>set skip on lo
+</span></span><span style="display:flex;"><span># the essential line
+</span></span><span style="display:flex;"><span>nat on $wanint inet from $vpnclients to any -&gt; $wanint
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>block in
+</span></span><span style="display:flex;"><span>pass in on $wanint proto udp from any to $wanint port $udpopen
+</span></span><span style="display:flex;"><span># the following two lines could be made stricter if you don&#39;t trust the clients
+</span></span><span style="display:flex;"><span>pass out quick
+</span></span><span style="display:flex;"><span>pass in on $vpnint from any to any
+</span></span><span style="display:flex;"><span>pass in inet proto icmp all icmp-type $icmptypes
+</span></span></code></pre></div><p>Note that all incoming TCP from the WAN is blocked with this setup, add a line resembling the &ldquo;pass in for proto udp&rdquo; one to open specific TCP ports.</p>
+<p>Rule 1 of firewall design is &ldquo;Never blindly copy-paste rules&rdquo;. While the above has been designed to not expose copy-pasters to too much danger, it is certainly better to extract the essentials and adapt the pass rules to your own needs. If you want IPv6 you have to.</p>
+<p>Since pf is included by default, all we need is some rc.conf settings</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>gateway_enable=&#34;YES&#34;
+</span></span><span style="display:flex;"><span>pf_enable=&#34;YES&#34;
+</span></span><span style="display:flex;"><span>pf_rules=&#34;/etc/pf.conf&#34;
+</span></span></code></pre></div><p>And then, enable packet forwarding, enable pf as our firewall, and start it</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sysctl net.inet.ip.forwarding=1
+</span></span><span style="display:flex;"><span>pfctl -ef /etc/pf.conf
+</span></span></code></pre></div><p>Nevermind any messages about missing ALTQ, we don&rsquo;t need QoS (yet).</p>
+<h2 id="configuring-clients">Configuring Clients<a hidden class="anchor" aria-hidden="true" href="#configuring-clients">#</a></h2>
+<p>Thanks to using the tun interface and keeping to the defaults, the client configuration can be kept close to the defaults. Just search online for tutorials for your operating system. If your client is Windows 8, read on.</p>
+<p>The Windows client includes an OpenVPN GUI program. I could not get that to show any GUI. If you can&rsquo;t either, don&rsquo;t despair. We will go old school and edit the settings file instead. If you don&rsquo;t want to install the OpenVPN GUI, you don&rsquo;t need it. You do, however, need the TAP adapter (selected by default) even though we have configured the server for TUN.</p>
+<p>After installing the Windows OpenVPN client, copy the client.ovpn file from c:\Program Files\OpenVPN\sample-config to ..\config. It will need the CA certificate, client key and client certificate from the server to accompany it.</p>
+<p>Edit the client.ovpn file slightly (it needs to be done as administrator). Look for the following lines and edit accordingly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>remote 1.2.3.4 # put your server IP or name here
+</span></span><span style="display:flex;"><span># the certificate files from the server (separate client certificate, not server)
+</span></span><span style="display:flex;"><span>ca   ca.crt
+</span></span><span style="display:flex;"><span>cert client.crt
+</span></span><span style="display:flex;"><span>key client.key
+</span></span><span style="display:flex;"><span># remember to keep these lines commented out if they appear
+</span></span><span style="display:flex;"><span>;ns-cert-type server
+</span></span><span style="display:flex;"><span>;remote-cert-tls server
+</span></span></code></pre></div><p>At the end add</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>#this line sets the VPN as default gateway
+</span></span><span style="display:flex;"><span>redirect-gateway def1
+</span></span><span style="display:flex;"><span>#these lines stroke Windows 8 the right way
+</span></span><span style="display:flex;"><span>route-method exe
+</span></span><span style="display:flex;"><span>route-delay 5
+</span></span><span style="display:flex;"><span>route-metric 550
+</span></span></code></pre></div><p>To start the connection we need to run (as administrator) from the config directory</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&#34;c:\program files\openvpn\bin\openvpn.exe&#34; --config client.ovpn
+</span></span></code></pre></div><p>The default OpenVPN network is 10.8.0.0 with the server at 10.8.0.1. Try pinging it.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/freebsd/">Freebsd</a></li>
+      <li><a href="http://localhost:1313/tags/openvpn/">Openvpn</a></li>
+      <li><a href="http://localhost:1313/tags/pf/">Pf</a></li>
+      <li><a href="http://localhost:1313/tags/vpn/">Vpn</a></li>
+    </ul>
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share OpenVPN server on FreeBSD with pf firewall on x"
+            href="https://x.com/intent/tweet/?text=OpenVPN%20server%20on%20FreeBSD%20with%20pf%20firewall&amp;url=http%3a%2f%2flocalhost%3a1313%2fopenvpn-server-on-freebsd-with-pf-firewall%2f&amp;hashtags=freebsd%2copenvpn%2cpf%2cvpn">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share OpenVPN server on FreeBSD with pf firewall on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fopenvpn-server-on-freebsd-with-pf-firewall%2f&amp;title=OpenVPN%20server%20on%20FreeBSD%20with%20pf%20firewall&amp;summary=OpenVPN%20server%20on%20FreeBSD%20with%20pf%20firewall&amp;source=http%3a%2f%2flocalhost%3a1313%2fopenvpn-server-on-freebsd-with-pf-firewall%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share OpenVPN server on FreeBSD with pf firewall on reddit"
+            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fopenvpn-server-on-freebsd-with-pf-firewall%2f&title=OpenVPN%20server%20on%20FreeBSD%20with%20pf%20firewall">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share OpenVPN server on FreeBSD with pf firewall on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fopenvpn-server-on-freebsd-with-pf-firewall%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share OpenVPN server on FreeBSD with pf firewall on whatsapp"
+            href="https://api.whatsapp.com/send?text=OpenVPN%20server%20on%20FreeBSD%20with%20pf%20firewall%20-%20http%3a%2f%2flocalhost%3a1313%2fopenvpn-server-on-freebsd-with-pf-firewall%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share OpenVPN server on FreeBSD with pf firewall on telegram"
+            href="https://telegram.me/share/url?text=OpenVPN%20server%20on%20FreeBSD%20with%20pf%20firewall&amp;url=http%3a%2f%2flocalhost%3a1313%2fopenvpn-server-on-freebsd-with-pf-firewall%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share OpenVPN server on FreeBSD with pf firewall on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=OpenVPN%20server%20on%20FreeBSD%20with%20pf%20firewall&u=http%3a%2f%2flocalhost%3a1313%2fopenvpn-server-on-freebsd-with-pf-firewall%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

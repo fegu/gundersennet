@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Proliant-Hp-Server-Microserver-Low-Noise on Gundersen.net</title>
+    <link>http://localhost:1313/tags/proliant-hp-server-microserver-low-noise/</link>
+    <description>Recent content in Proliant-Hp-Server-Microserver-Low-Noise on Gundersen.net</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 16 Jul 2012 13:44:30 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/proliant-hp-server-microserver-low-noise/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HP ProLiant Microserver</title>
+      <link>http://localhost:1313/hp-proliant-microserver/</link>
+      <pubDate>Mon, 16 Jul 2012 13:44:30 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=64</guid> 
+      <description>&lt;p&gt;Hewlett-Packards Microserver is great value for money. At work we have bought the more expensive rack-mount ProLiants for ten years, and with the microserver I have transitioned to HP for my home server as well.&lt;/p&gt;
+&lt;p&gt;Inexpensive, extensible, low-noise, small and with a slick black finish. Thumbscrews for case and mainboard, lots and lots of spare screws in the back of the front door together with a supplied torx-tool, and neat cable routing.  Let&amp;rsquo;s open it up and have a look.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

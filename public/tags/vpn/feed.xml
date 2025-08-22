@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vpn on Gundersen.net</title>
+    <link>http://localhost:1313/tags/vpn/</link>
+    <description>Recent content in Vpn on Gundersen.net</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 03 Nov 2014 22:04:26 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/vpn/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenVPN server on FreeBSD with pf firewall</title>
+      <link>http://localhost:1313/openvpn-server-on-freebsd-with-pf-firewall/</link>
+      <pubDate>Mon, 03 Nov 2014 22:04:26 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=306</guid> 
+      <description>&lt;p&gt;FreeBSD 10, with the new and improved packet filter/firewall pf, and OpenVPN are all great products. But I had a not so great time making them play together - especially with a Windows 8 client. As with everything, it is easy when you know how.&lt;/p&gt;
+&lt;p&gt;Most OpenVPN examples seem to be using the tap interface and ethernet bridging. To keep things simple, I wanted to go with the default ip-routed tun interface. Apart from being default, thus requiring less config fiddling, it fits nicely with pf and requires one less kernel module.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

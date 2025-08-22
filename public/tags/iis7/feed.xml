@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Iis7 on Gundersen.net</title>
+    <link>http://localhost:1313/tags/iis7/</link>
+    <description>Recent content in Iis7 on Gundersen.net</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 02 Mar 2015 13:49:05 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/iis7/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSL Host Header with wildcard certificate on IIS7 solved</title>
+      <link>http://localhost:1313/ssl-host-header-with-wildcard-certificate-on-iis7-explained/</link>
+      <pubDate>Mon, 02 Mar 2015 13:49:05 +0000</pubDate>
+       <guid isPermaLink="false">https://gundersen.net/?p=363</guid> 
+      <description>&lt;p&gt;When adding a HTTPS site on IIS7, the Host header field is disabled. If you have one IP per site, as used to be the requirement, this is not a problem. But when you want to host multiple sites on one IP, it is a show stopper.&lt;/p&gt;
+&lt;p&gt;In my case I had a wildcard certificate, and ran into this when adding my second site. It was important not to cause any down-time on the already running site.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

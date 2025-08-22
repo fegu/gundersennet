@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Microsim-Sim-Mobile on Gundersen.net</title>
+    <link>http://localhost:1313/tags/microsim-sim-mobile/</link>
+    <description>Recent content in Microsim-Sim-Mobile on Gundersen.net</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 16 Jul 2012 12:26:55 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/microsim-sim-mobile/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Low-cost MicroSIM</title>
+      <link>http://localhost:1313/low-cost-microsim/</link>
+      <pubDate>Mon, 16 Jul 2012 12:26:55 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=60</guid> 
+      <description>&lt;p&gt;Several new phones, such as the iPhone and Samsung Galaxy S3, requires a smaller SIM card. Such a MicroSIM is nothing but an ordinary sim-card with some superfluous plastic removed.&lt;/p&gt;
+&lt;p&gt;When you are there, in the shop with your new phone, you are eager to get started with it. Some stores know to take advantage of that and will charge you extra for the microsim. For just a few moments of their time, putting your old sim through a somewhat special hole-punch, they can charge as much as $30.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Haskell on Gundersen.net</title>
+    <link>http://localhost:1313/tags/haskell/</link>
+    <description>Recent content in Haskell on Gundersen.net</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 06 Apr 2013 13:17:07 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/haskell/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Haskell on Windows</title>
+      <link>http://localhost:1313/haskell-on-windows/</link>
+      <pubDate>Sat, 06 Apr 2013 13:17:07 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=111</guid> 
+      <description>&lt;p&gt;Haskell is fascinating, but getting started can be a bit rough - especially if you are on Windows. Here are some necessary steps to get you over these initial stumbling blocks when running the &lt;a href=&#34;http://www.haskell.org&#34; title=&#34;Haskell Platform&#34;&gt;Haskell Platform&lt;/a&gt; (2012.4 or 2014.2) on Windows.&lt;/p&gt;
+&lt;p&gt;It is quite obvioius that a lot of the users of Haskell are on other platforms, and as a Windows-user you quickly run into some problems not experienced on other platforms. This is doubly frustrating as a newbie because you haven&amp;rsquo;t had time to develop the necessary intuition about where to look for solutions yet. It also certainly does not help that Haskell error messages are known to be misleading.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

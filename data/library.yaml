@@ -1,0 +1,436 @@
+- path: /wp-content/uploads/2012/07/intelbootloader.png
+  title: IntelBootloader of 8MB
+  id: "5"
+  published: 2012-07-04T18:43:08Z
+- path: /wp-content/uploads/2012/07/ssd1.jpg
+  title: ssd1
+  id: "6"
+  published: 2012-07-04T18:43:09Z
+- path: /wp-content/uploads/2012/07/ssd2.jpg
+  title: Intel 160GB SSD
+  id: "7"
+  published: 2012-07-04T18:43:09Z
+- path: /wp-content/uploads/2012/07/dynamicdisk.png
+  title: Dynamic Disk
+  id: "14"
+  published: 2012-07-04T19:09:42Z
+- path: /wp-content/uploads/2012/07/splashtee.png
+  title: Teeworlds
+  id: "28"
+  published: 2012-07-04T20:05:07Z
+- path: /wp-content/uploads/2012/07/ssd11.jpg
+  title: Solid State Drive
+  id: "42"
+  published: 2012-07-05T10:24:37Z
+- path: /wp-content/uploads/2012/07/ssd3.jpg
+  title: Solid State Drive under
+  id: "43"
+  published: 2012-07-05T10:28:35Z
+- path: /wp-content/uploads/2012/07/hdd.jpg
+  title: Old style disk drive
+  id: "44"
+  published: 2012-07-05T10:32:59Z
+- path: /wp-content/uploads/2012/07/microsim_punch.jpg
+  title: MicroSIM punch
+  id: "52"
+  published: 2012-07-10T13:07:34Z
+- path: /wp-content/uploads/2012/07/sim_hole.jpg
+  title: SIM hole
+  id: "53"
+  published: 2012-07-10T13:07:34Z
+- path: /wp-content/uploads/2012/07/microserver1.jpg
+  title: HP ProLiant Microserver
+  id: "65"
+  published: 2012-07-16T13:31:29Z
+- path: /wp-content/uploads/2012/07/microserver_open.jpg
+  title: Microserver Open
+  id: "66"
+  published: 2012-07-16T13:31:31Z
+- path: /wp-content/uploads/2012/07/sata_cable_power.jpg
+  title: SATA cable and power converter
+  id: "67"
+  published: 2012-07-16T13:36:30Z
+- path: /wp-content/uploads/2012/07/microserver_back.jpg
+  title: Microserver Back and Front
+  id: "72"
+  published: 2012-07-18T12:15:59Z
+- path: /wp-content/uploads/2013/01/createshortcutcmd.png
+  title: Create Shortcut
+  id: "89"
+  published: 2013-01-03T11:44:58Z
+- path: /wp-content/uploads/2013/01/hibernateoff.png
+  title: Hibernate Off
+  id: "90"
+  published: 2013-01-03T11:47:11Z
+- path: /wp-content/uploads/2013/01/system_properties.png
+  title: System Properties
+  id: "91"
+  published: 2013-01-03T11:50:14Z
+- path: /wp-content/uploads/2013/01/virtualmemory.png
+  title: Virtual Memory Settings
+  id: "92"
+  published: 2013-01-03T11:50:58Z
+- path: /wp-content/uploads/2013/03/itworks_advanced.png
+  title: Pidgin Advanced settings
+  id: "102"
+  published: 2013-03-26T21:34:10Z
+- path: /wp-content/uploads/2013/03/itworks_basic.png
+  title: Pidgin Basic settings
+  id: "103"
+  published: 2013-03-26T21:34:11Z
+- path: /wp-content/uploads/2013/03/itworks.png
+  title: Pidgin on Lync
+  id: "104"
+  published: 2013-03-26T21:34:11Z
+- path: /wp-content/uploads/2013/04/haskell_logo.png
+  title: Haskell
+  id: "112"
+  published: 2013-04-06T13:16:25Z
+- path: /wp-content/uploads/2013/06/lang_keyb_change.png
+  title: lang_keyb_change
+  id: "120"
+  published: 2013-06-14T11:03:05Z
+- path: /wp-content/uploads/2013/06/lang_keyb_controlpanel.png
+  title: lang_keyb_controlpanel
+  id: "121"
+  published: 2013-06-14T11:12:54Z
+- path: /wp-content/uploads/2013/06/lang_keyb_controlpanel_change.png
+  title: lang_keyb_controlpanel_change
+  id: "122"
+  published: 2013-06-14T11:16:32Z
+- path: /wp-content/uploads/2013/06/language_keyboard_fix.png
+  title: language_keyboard_fix
+  id: "123"
+  published: 2013-06-14T11:20:23Z
+- path: /wp-content/uploads/2013/06/chrome_cache.png
+  title: chrome_cache
+  id: "134"
+  published: 2013-06-17T19:16:01Z
+- path: /wp-content/uploads/2013/06/chrome_download.png
+  title: chrome_download
+  id: "135"
+  published: 2013-06-17T19:16:01Z
+- path: /wp-content/uploads/2013/09/rasp1.jpg
+  title: Raspberry Pi
+  id: "149"
+  published: 2013-09-06T18:05:17Z
+- path: /wp-content/uploads/2013/09/rasp2.jpg
+  title: Raspberry no RCA
+  id: "150"
+  published: 2013-09-06T18:09:30Z
+- path: /wp-content/uploads/2013/09/rasp3.jpg
+  title: Raspberry sanas RCA and audiojack
+  id: "151"
+  published: 2013-09-06T18:11:55Z
+- path: /wp-content/uploads/2013/09/Rasp4.jpg
+  title: Rasp4
+  id: "152"
+  published: 2013-09-06T18:14:33Z
+- path: /wp-content/uploads/2013/09/Rasp41.jpg
+  title: Raspberry clean
+  id: "154"
+  published: 2013-09-06T18:15:37Z
+- path: /wp-content/uploads/2013/09/rasp5.jpg
+  title: Snip SD
+  id: "158"
+  published: 2013-09-09T13:21:47Z
+- path: /wp-content/uploads/2013/10/FunctionalSideEffects.jpg
+  title: Runar Bjarnason
+  id: "165"
+  published: 2013-10-22T11:16:08Z
+- path: /wp-content/uploads/2013/11/NUC-box.jpg
+  title: NUC box
+  id: "189"
+  published: 2013-11-10T22:16:32Z
+- path: /wp-content/uploads/2013/11/NUC-IO-VESA.jpg
+  title: NUC IO and VESA
+  id: "190"
+  published: 2013-11-10T22:16:35Z
+- path: /wp-content/uploads/2013/11/NUC-mounted.jpg
+  title: NUC mounted on monitor
+  id: "191"
+  published: 2013-11-10T22:16:37Z
+- path: /wp-content/uploads/2013/11/NUC-wlan-msata.jpg
+  title: NUC and WLAN + mSATA
+  id: "192"
+  published: 2013-11-10T22:16:40Z
+- path: /wp-content/uploads/2013/11/NUC-avec.jpg
+  title: NUC with components
+  id: "193"
+  published: 2013-11-10T22:16:43Z
+- path: /wp-content/uploads/2013/12/Eggs450.jpg
+  title: ""
+  id: "199"
+  published: 2013-12-22T20:59:33Z
+- path: /wp-content/uploads/2013/12/IR450.jpg
+  title: ""
+  id: "200"
+  published: 2013-12-22T20:59:34Z
+- path: /wp-content/uploads/2013/12/Pour450.jpg
+  title: ""
+  id: "201"
+  published: 2013-12-22T20:59:34Z
+- path: /wp-content/uploads/2013/12/Poured450.jpg
+  title: ""
+  id: "202"
+  published: 2013-12-22T20:59:35Z
+- path: /wp-content/uploads/2013/12/Smeared450.jpg
+  title: ""
+  id: "203"
+  published: 2013-12-22T20:59:35Z
+- path: /wp-content/uploads/2013/12/Temp450.jpg
+  title: ""
+  id: "204"
+  published: 2013-12-22T20:59:36Z
+- path: /wp-content/uploads/2013/12/WeldIR450.jpg
+  title: ""
+  id: "205"
+  published: 2013-12-22T20:59:36Z
+- path: /wp-content/uploads/2013/12/Cooking450.jpg
+  title: ""
+  id: "206"
+  published: 2013-12-22T20:59:37Z
+- path: /wp-content/uploads/2013/12/ioskeypadup450px.png
+  title: iOS Keypad
+  id: "220"
+  published: 2013-12-29T00:45:59Z
+- path: /wp-content/uploads/2013/12/DSC03716_450px.jpg
+  title: Karamellpudding
+  id: "236"
+  published: 2014-01-05T17:47:03Z
+- path: /wp-content/uploads/2013/12/DSC03715_450px.jpg
+  title: Automatisk rører
+  id: "237"
+  published: 2014-01-05T17:49:14Z
+- path: /wp-content/uploads/2014/04/Mediakonverter_Altibox.jpg
+  title: Mediakonverter
+  id: "246"
+  published: 2014-04-06T13:37:54Z
+- path: /wp-content/uploads/2014/04/Zyxel_Altibox.jpg
+  title: Zyxelruter
+  id: "247"
+  published: 2014-04-06T13:37:54Z
+- path: /wp-content/uploads/2014/04/pfSense_Altibox.png
+  title: pfSense Altibox
+  id: "248"
+  published: 2014-04-06T13:45:41Z
+- path: /wp-content/uploads/2014/04/Chromecast_pfSense_NAT.png
+  title: Chromecast pfSense NAT
+  id: "257"
+  published: 2014-04-14T12:51:56Z
+- path: /wp-content/uploads/2014/04/Netflix_MadMen.png
+  title: Netflix Mad Men
+  id: "258"
+  published: 2014-04-14T12:59:42Z
+- path: /wp-content/uploads/2014/08/Wires.jpg
+  title: Wires
+  id: "271"
+  published: 2014-08-24T18:49:22Z
+- path: /wp-content/uploads/2014/08/Bending_LED.jpg
+  title: Bending_LED
+  id: "272"
+  published: 2014-08-24T18:49:23Z
+- path: /wp-content/uploads/2014/08/Cube_upside_down.jpg
+  title: Cube_upside_down
+  id: "273"
+  published: 2014-08-24T18:49:23Z
+- path: /wp-content/uploads/2014/08/Cutting_wires.jpg
+  title: Cutting_wires
+  id: "274"
+  published: 2014-08-24T18:49:24Z
+- path: /wp-content/uploads/2014/08/Jigs_and_pcb.jpg
+  title: Jigs_and_pcb
+  id: "275"
+  published: 2014-08-24T18:49:24Z
+- path: /wp-content/uploads/2014/08/Kits.jpg
+  title: Kits
+  id: "276"
+  published: 2014-08-24T18:49:25Z
+- path: /wp-content/uploads/2014/08/LEDs.jpg
+  title: LEDs
+  id: "277"
+  published: 2014-08-24T18:49:25Z
+- path: /wp-content/uploads/2014/08/LEDs_in_jig_1.jpg
+  title: LEDs_in_jig_1
+  id: "278"
+  published: 2014-08-24T18:49:26Z
+- path: /wp-content/uploads/2014/08/Removing_LEDs_from_jig.jpg
+  title: Removing_LEDs_from_jig
+  id: "279"
+  published: 2014-08-24T18:49:26Z
+- path: /wp-content/uploads/2014/08/Steel.jpg
+  title: Steel
+  id: "280"
+  published: 2014-08-24T18:49:27Z
+- path: /wp-content/uploads/2014/08/Testing_LED_cut.jpg
+  title: Testing_LED_cut
+  id: "281"
+  published: 2014-08-24T18:49:27Z
+- path: /wp-content/uploads/2014/08/Testing_LED_uncut.jpg
+  title: Testing_LED_uncut
+  id: "282"
+  published: 2014-08-24T18:49:28Z
+- path: /wp-content/uploads/2014/08/LEDjig.zip
+  title: LED_jig_gcode.zip
+  id: "289"
+  published: 2014-08-24T20:35:43Z
+- path: /wp-content/uploads/2014/08/LEDjig_2.zip
+  title: LEDjig_2_gcode.zip
+  id: "291"
+  published: 2014-08-24T20:38:11Z
+- path: /wp-content/uploads/2014/10/Unreal450.png
+  title: Unreal Tournament 99 GOTY
+  id: "299"
+  published: 2014-10-19T13:54:34Z
+- path: /wp-content/uploads/2014/11/OpenVPN_BSDs.png
+  title: OpenVPN OpenBSD FreeBSD
+  id: "309"
+  published: 2014-11-03T21:32:27Z
+- path: /wp-content/uploads/2015/02/Stiftelsesdokument.doc
+  title: Stiftelsesdokument
+  id: "360"
+  published: 2015-02-25T12:51:19Z
+- path: /wp-content/uploads/2015/03/cert_rename_end.png
+  title: A friendly rename solves everything
+  id: "364"
+  published: 2015-03-02T13:33:51Z
+- path: /wp-content/uploads/2015/03/cert_rename_1.png
+  title: SSL Cert Rename
+  id: "365"
+  published: 2015-03-02T13:33:51Z
+- path: /wp-content/uploads/2015/03/cert_rename_2.png
+  title: Add MMC snap-in
+  id: "366"
+  published: 2015-03-02T13:33:52Z
+- path: /wp-content/uploads/2015/03/cert_rename_3.png
+  title: Friendly Rename
+  id: "367"
+  published: 2015-03-02T13:33:52Z
+- path: /wp-content/uploads/2015/09/2500floppies_3point5gigs_450px.jpg
+  title: Floppies arriving
+  id: "386"
+  published: 2015-09-27T20:08:27Z
+- path: /wp-content/uploads/2015/09/FloppyOperation_450px.jpg
+  title: Retro workstation
+  id: "387"
+  published: 2015-09-27T20:09:56Z
+- path: /wp-content/uploads/2015/09/floppytable_450px.jpg
+  title: Floppytable
+  id: "396"
+  published: 2015-09-28T08:11:25Z
+- path: /wp-content/uploads/2015/09/floppytower.jpg
+  title: Resistance to change
+  id: "401"
+  published: 2015-09-28T09:13:56Z
+- path: /wp-content/uploads/2016/11/Screenshot_20161029-113929.png
+  title: ASUS 4G-AC55U Screenshot (Full Size)
+  id: "419"
+  published: 2016-11-13T13:22:24Z
+- path: /wp-content/uploads/2016/11/ASus4G-AC55U_450px.png
+  title: ASUS 4G AC55U
+  id: "420"
+  published: 2016-11-13T13:24:44Z
+- path: /wp-content/uploads/2016/11/Screenshot_20161029-113929_450px.png
+  title: ASUS 4G AC55U
+  id: "421"
+  published: 2016-11-13T13:27:13Z
+- path: /wp-content/uploads/2017/06/FreeBSDConsole.png
+  title: DRAC5 FreeBSDConsole
+  id: "436"
+  published: 2017-06-07T21:30:30Z
+- path: /wp-content/uploads/2017/06/FreeBSDConsole_450px.png
+  title: DRAC5 Console with FreeBSD
+  id: "438"
+  published: 2017-06-07T21:33:04Z
+- path: /wp-content/uploads/2017/06/VirtualMedia-1.png
+  title: VirtualMedia
+  id: "439"
+  published: 2017-06-07T21:33:08Z
+- path: /wp-content/uploads/2017/06/drac5.jpg
+  title: DRAC5
+  id: "444"
+  published: 2017-06-07T22:07:39Z
+- path: /wp-content/uploads/2019/09/box.jpg
+  title: box
+  id: "455"
+  published: 2019-09-28T17:50:40Z
+- path: /wp-content/uploads/2019/09/gutted-450px.jpg
+  title: gutted-450px
+  id: "456"
+  published: 2019-09-28T17:53:18Z
+- path: /wp-content/uploads/2019/09/Pinout-solidstate-relay.png
+  title: Pinout-solidstate-relay
+  id: "457"
+  published: 2019-09-28T17:56:40Z
+- path: /wp-content/uploads/2019/09/parts-list.jpg
+  title: parts-list
+  id: "458"
+  published: 2019-09-28T17:59:57Z
+- path: /wp-content/uploads/2019/09/soldered-450px.jpg
+  title: soldered-450px
+  id: "459"
+  published: 2019-09-28T18:01:35Z
+- path: /wp-content/uploads/2019/09/glue-gob-450px.jpg
+  title: glue-gob-450px
+  id: "460"
+  published: 2019-09-28T18:02:15Z
+- path: /wp-content/uploads/2019/09/IMG_done_pins_450px.jpg
+  title: IMG_done_pins_450px
+  id: "461"
+  published: 2019-09-28T18:05:19Z
+- path: /wp-content/uploads/2019/09/garage_opener_450px.jpg
+  title: garage_opener_450px
+  id: "462"
+  published: 2019-09-28T18:07:12Z
+- path: /wp-content/uploads/2019/09/CPC1035N-datasheet.pdf
+  title: CPC1035N-datasheet
+  id: "463"
+  published: 2019-09-28T18:19:17Z
+- path: /wp-content/uploads/2020/03/publishfailed_450px.png
+  title: publishfailed_450px
+  id: "476"
+  published: 2020-03-25T11:11:08Z
+- path: /wp-content/uploads/2020/03/zipdeploycheckbox_450px.png
+  title: zipdeploycheckbox_450px
+  id: "477"
+  published: 2020-03-25T11:15:04Z
+- path: /wp-content/uploads/2020/03/publishprofiles.png
+  title: publishprofiles
+  id: "478"
+  published: 2020-03-25T11:22:15Z
+- path: /wp-content/uploads/2021/01/thermal_start.jpg
+  title: thermal_start
+  id: "485"
+  published: 2021-01-03T22:41:26Z
+- path: /wp-content/uploads/2021/01/thermal_removed.jpg
+  title: thermal_removed
+  id: "486"
+  published: 2021-01-03T22:43:48Z
+- path: /wp-content/uploads/2021/01/thermal_cleaned.jpg
+  title: thermal_cleaned
+  id: "487"
+  published: 2021-01-03T22:45:11Z
+- path: /wp-content/uploads/2021/01/thermal_plug_step1.jpg
+  title: thermal_plug_step1
+  id: "488"
+  published: 2021-01-03T22:49:07Z
+- path: /wp-content/uploads/2021/01/thermal_plug_done.jpg
+  title: thermal_plug_done
+  id: "489"
+  published: 2021-01-03T22:51:07Z
+- path: /wp-content/uploads/2021/01/nano_lap_top.jpg
+  title: nano_lap_top
+  id: "499"
+  published: 2021-01-16T17:04:03Z
+- path: /wp-content/uploads/2021/01/nnao_size_vs_x1gen3.jpg
+  title: nnao_size_vs_x1gen3
+  id: "500"
+  published: 2021-01-16T17:04:42Z
+- path: /wp-content/uploads/2021/01/nano_ps_450px.jpg
+  title: nano_ps_450px
+  id: "501"
+  published: 2021-01-16T17:25:53Z
+- path: /wp-content/uploads/2021/03/nano-disk.png
+  title: nano-disk
+  id: "528"
+  published: 2021-03-02T11:26:01Z

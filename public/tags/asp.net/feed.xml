@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Asp.net on Gundersen.net</title>
+    <link>http://localhost:1313/tags/asp.net/</link>
+    <description>Recent content in Asp.net on Gundersen.net</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 30 Jan 2021 23:38:49 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/asp.net/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.Net&#39;s defective-by-default browser capabilities detection lends itself to DoS</title>
+      <link>http://localhost:1313/nets-defective-cached-browser-capabilities-detection-dos-attack/</link>
+      <pubDate>Sat, 30 Jan 2021 23:38:49 +0000</pubDate>
+       <guid isPermaLink="false">https://gundersen.net/?p=512</guid> 
+      <description>&lt;p&gt;Ever since .Net v4, in all versions including the last classic .Net version v4.8, the built-in browser detection accessible in the Request.Browser (a HttpBrowserCapabilities object) has a serious flaw which will bite you as soon as your site gets several visitors per minute.&lt;/p&gt;
+&lt;p&gt;What happens, if you rely on this object, is that users will randomly report having their browser mis-identified.&lt;/p&gt;
+&lt;p&gt;This post shows why it happens and how to solve it. The issue is also easy to reproduce locally, worth a few fun minutes. If you are so inclined, the problem also lends itself to a DoS attack.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

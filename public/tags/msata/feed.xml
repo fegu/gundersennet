@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Msata on Gundersen.net</title>
+    <link>http://localhost:1313/tags/msata/</link>
+    <description>Recent content in Msata on Gundersen.net</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 10 Nov 2013 22:42:26 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/msata/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quick Overview: Intel Next Unit of Computing</title>
+      <link>http://localhost:1313/quick-overview-intel-next-unit-of-computing/</link>
+      <pubDate>Sun, 10 Nov 2013 22:42:26 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=188</guid> 
+      <description>&lt;p&gt;Intel is pushing a new form factor, the Next Unit of Computing (NUC), and it is looking good. I recently got two of these and have some pictures and experiences to share.&lt;/p&gt;
+&lt;p&gt;The NUCs have some exciting properties and a couple of gotchas, read on and avoid my mistakes.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;NUC box&#34; loading=&#34;lazy&#34; src=&#34;//gundersen.net/wp-content/uploads/2013/11/NUC-box.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;First of all the box itself has a small surprise. When it opens it plays the Intel jingle from some embedded electronics with a light-sensor and a speaker. Oh, the humanity.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

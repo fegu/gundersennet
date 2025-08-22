@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bug on Gundersen.net</title>
+    <link>http://localhost:1313/tags/bug/</link>
+    <description>Recent content in Bug on Gundersen.net</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 13 Nov 2016 13:31:45 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/bug/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solved: Asus 4G-AC55U randomly going offline</title>
+      <link>http://localhost:1313/solved-asus-4g-ac55u-randomly-going-offline/</link>
+      <pubDate>Sun, 13 Nov 2016 13:31:45 +0000</pubDate>
+       <guid isPermaLink="false">https://gundersen.net/?p=418</guid> 
+      <description>&lt;p&gt;This Asus 4G router can be great, if configured correctly.&lt;/p&gt;
+&lt;p&gt;It has excellent sensitivity. Previously, I needed an external (outdoors) antenna to get 3G and 4G (LTE) coverage at the cabin; but the AC55U is sensitive enough to get the same reception indoors. I have another one at a remote shooting range to provide WiFi there.&lt;/p&gt;
+&lt;p&gt;But sometimes, even with the (at writing) most recent firmware 3.0.0.4.378_8071, it suddenly disconnects from the mobile provider or refuses to route traffic. At first I wrote it off as random service issues with the mobile coverage. After all, these are rural areas with weak signal. But the outages kept appearing while my cell phone worked fine.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

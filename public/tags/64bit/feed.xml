@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>64bit on Gundersen.net</title>
+    <link>http://localhost:1313/tags/64bit/</link>
+    <description>Recent content in 64bit on Gundersen.net</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 08 Sep 2012 17:58:11 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/64bit/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>32bit jail on 64bit FreeBSD</title>
+      <link>http://localhost:1313/32bit-jail-on-64bit-freebsd/</link>
+      <pubDate>Sat, 08 Sep 2012 17:58:11 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=75</guid> 
+      <description>&lt;p&gt;Sometimes it can be necessary or preferable to run software in 32bit versions, even if the OS is 64bit (i.e. running the i386-version on amd64 OS).&lt;/p&gt;
+&lt;p&gt;As an example, software with deep memory structures mainly consisting of pointers, such as dictionaries of dictionaries of light-weight objects, will occupy almost twice the RAM on a 64bit OS. If multiple instances of, say, 3GB memory structures are needed, the 64bit penalty quickly adds up.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hardware on Gundersen.net</title>
+    <link>http://localhost:1313/categories/hardware/</link>
+    <description>Recent content in Hardware on Gundersen.net</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 16 Jan 2021 17:33:52 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/hardware/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lenovo X1 Nano - actual use</title>
+      <link>http://localhost:1313/lenovo-x1-nano-hands-on-practical-use-review/</link>
+      <pubDate>Sat, 16 Jan 2021 17:33:52 +0000</pubDate>
+       <guid isPermaLink="false">https://gundersen.net/?p=493</guid> 
+      <description>&lt;p&gt;I have used the X1 Nano heavily for the last few days after configuring it with all the software I use as a software developer and manager. If you are considering the X1 Nano, but is wondering how it really is, this post is for you.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2021/01/nano%5Flap%5Ftop.jpg&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;I got the first model available in Scandinavia, the Core i5 16/256GB with 4G and non-touch matte 2160px 16:10 screen with extended warranty (20UN002CMX). This came from the first shipment to Norway, while Lenovo&amp;rsquo;s own web shop still just said &amp;ldquo;Coming soon&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Replacing thermal paste on Lenovo X1 Carbon to reduce temp, fan noise and CPU-throttling</title>
+      <link>http://localhost:1313/replacing-thermal-paste-on-lenovo-x1-carbon-to-reduce-temp-fan-noise-and-cpu-throttling/</link>
+      <pubDate>Sun, 03 Jan 2021 23:00:06 +0000</pubDate>
+       <guid isPermaLink="false">https://gundersen.net/?p=484</guid> 
+      <description>&lt;p&gt;I have exclusively used Lenovo (used to be IBM) Thinkpads for over 20 years, opting for X1 Carbons since the launch. Almost all Lenovo laptops suffer thermal throttling and excessive heating after a few years. Here is how to solve this issue, shown on a X1 Carbon Gen 3 (but they are quite similar).&lt;/p&gt;
+&lt;p&gt;The bottom is easy to remove, just a few standard Philips screws. Inside, the cooling assembly with fan and heat sink is located top left.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Solved: Dell DRAC 5 not responding</title>
+      <link>http://localhost:1313/solved-dell-drac-5-not-responding-to-httphttps/</link>
+      <pubDate>Wed, 07 Jun 2017 21:55:44 +0000</pubDate>
+       <guid isPermaLink="false">https://gundersen.net/?p=435</guid> 
+      <description>&lt;p&gt;I suddenly found myself in charge of an unresponsive old Dell PowerEdge 1950 server with a DRAC 5 remote management card from 2006. Don&amp;rsquo;t ask. The DRAC was pingable, but did not respond to http/https. When that was sorted out, the remote console did not want to play nice, because Java. The solution was long-winded and might help others, so here it is. Start at whatever step suits you, it is all a case of IT archeology at this point.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Solved: Asus 4G-AC55U randomly going offline</title>
+      <link>http://localhost:1313/solved-asus-4g-ac55u-randomly-going-offline/</link>
+      <pubDate>Sun, 13 Nov 2016 13:31:45 +0000</pubDate>
+       <guid isPermaLink="false">https://gundersen.net/?p=418</guid> 
+      <description>&lt;p&gt;This Asus 4G router can be great, if configured correctly.&lt;/p&gt;
+&lt;p&gt;It has excellent sensitivity. Previously, I needed an external (outdoors) antenna to get 3G and 4G (LTE) coverage at the cabin; but the AC55U is sensitive enough to get the same reception indoors. I have another one at a remote shooting range to provide WiFi there.&lt;/p&gt;
+&lt;p&gt;But sometimes, even with the (at writing) most recent firmware 3.0.0.4.378_8071, it suddenly disconnects from the mobile provider or refuses to route traffic. At first I wrote it off as random service issues with the mobile coverage. After all, these are rural areas with weak signal. But the outages kept appearing while my cell phone worked fine.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>4x4x4 3D RGB Charlie Cube by Stavanger Makerspace</title>
+      <link>http://localhost:1313/charliecube/</link>
+      <pubDate>Sun, 24 Aug 2014 19:45:48 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=270</guid> 
+      <description>&lt;p&gt;Over the last two Sundays, &lt;a href=&#34;http://www.meetup.com/Stavanger-Makerspace/&#34; title=&#34;Stavanger Makerspace&#34;&gt;Stavanger Makerspace&lt;/a&gt; hosted meetups to build 4x4x4 RBG LED Arduino-controlled &amp;ldquo;charlie cubes&amp;rdquo;. A charlie cube, originally designed by &lt;a href=&#34;http://aglick.com/charliecube.html&#34;&gt;Asher Glick and Kevin Baker&lt;/a&gt;, uses a minimum of components and can be made very cheap by using just an Arduino nano.&lt;/p&gt;
+&lt;p&gt;Charlie-cube projects abound on the internet, but the amount of soldering points suspended only by thin wires often leads to misaligned results. Our intrepid member &lt;a href=&#34;http://www.meetup.com/Stavanger-Makerspace/members/54632462/&#34; title=&#34;Kjetil Eik&#34;&gt;Kjetil Eik&lt;/a&gt;, known for impressive 3D prints on his sturdy &lt;a href=&#34;http://shop.felixprinters.com/&#34; title=&#34;Felix&#34;&gt;Felix&lt;/a&gt;, thought we could do better. He designed and printed tools and jigs to straighten out what would otherwise have been a crooked crowd. He also designed a PCB to avoid the messy breadboard.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quick Overview: Intel Next Unit of Computing</title>
+      <link>http://localhost:1313/quick-overview-intel-next-unit-of-computing/</link>
+      <pubDate>Sun, 10 Nov 2013 22:42:26 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=188</guid> 
+      <description>&lt;p&gt;Intel is pushing a new form factor, the Next Unit of Computing (NUC), and it is looking good. I recently got two of these and have some pictures and experiences to share.&lt;/p&gt;
+&lt;p&gt;The NUCs have some exciting properties and a couple of gotchas, read on and avoid my mistakes.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;NUC box&#34; loading=&#34;lazy&#34; src=&#34;//gundersen.net/wp-content/uploads/2013/11/NUC-box.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;First of all the box itself has a small surprise. When it opens it plays the Intel jingle from some embedded electronics with a light-sensor and a speaker. Oh, the humanity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Raspberry Pi: Making it slimmer</title>
+      <link>http://localhost:1313/raspberry-pi-making-it-slimmer/</link>
+      <pubDate>Fri, 06 Sep 2013 18:18:17 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=148</guid> 
+      <description>&lt;p&gt;The Raspberry Pi is a versatile and cheap piece of gear. While neat, it has pieces protruding from every side and as it turns out, this made it just slightly too wide for the enclosure I had in mind. No biggie, we can slim it down a bit.&lt;/p&gt;
+&lt;p&gt;The parts bothering us the most are the RCA connector, the audio jack and the SD-card. This being 2013, we are not going to miss neither the RCA nor the old-school audio.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HP ProLiant Microserver</title>
+      <link>http://localhost:1313/hp-proliant-microserver/</link>
+      <pubDate>Mon, 16 Jul 2012 13:44:30 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=64</guid> 
+      <description>&lt;p&gt;Hewlett-Packards Microserver is great value for money. At work we have bought the more expensive rack-mount ProLiants for ten years, and with the microserver I have transitioned to HP for my home server as well.&lt;/p&gt;
+&lt;p&gt;Inexpensive, extensible, low-noise, small and with a slick black finish. Thumbscrews for case and mainboard, lots and lots of spare screws in the back of the front door together with a supplied torx-tool, and neat cable routing.  Let&amp;rsquo;s open it up and have a look.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Low-cost MicroSIM</title>
+      <link>http://localhost:1313/low-cost-microsim/</link>
+      <pubDate>Mon, 16 Jul 2012 12:26:55 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=60</guid> 
+      <description>&lt;p&gt;Several new phones, such as the iPhone and Samsung Galaxy S3, requires a smaller SIM card. Such a MicroSIM is nothing but an ordinary sim-card with some superfluous plastic removed.&lt;/p&gt;
+&lt;p&gt;When you are there, in the shop with your new phone, you are eager to get started with it. Some stores know to take advantage of that and will charge you extra for the microsim. For just a few moments of their time, putting your old sim through a somewhat special hole-punch, they can charge as much as $30.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Under the hood of a SSD</title>
+      <link>http://localhost:1313/under-the-hood-of-a-ssd/</link>
+      <pubDate>Thu, 05 Jul 2012 10:34:21 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=41</guid> 
+      <description>&lt;p&gt;Solid state drives look surprisingly simple under the cover. If it wasn&amp;rsquo;t for the 2.5&amp;quot; form factor they inherited from ordinary drives, they could probably be both smaller and lighter than today.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;//gundersen.net/wp-content/uploads/2012/07/ssd11.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Shown here is a 160GB Intel SSD. The die cast aluminium casing is surprisingly thin and light. It is held together with four small screws, some of which are covered by do not void stickers.&lt;/p&gt;
+&lt;p&gt;The 10 large chips comprises the actual storage, 16GB each. The two other chips are controllers for the storage and SATA interface.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Solid State Drives: the best of drives, the worst of drives</title>
+      <link>http://localhost:1313/solid-state-drives-the-best-of-drives-the-worst-of-drives/</link>
+      <pubDate>Wed, 04 Jul 2012 18:45:20 +0000</pubDate>
+       <guid isPermaLink="false">http://www.gundersen.net/?p=4</guid> 
+      <description>&lt;p&gt;There is no denying that solid state hard drives have a lot of advantages. They are fast, silent and runs cooler than ordinary drives. But when they fail, they fail hard. Really hard.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;//gundersen.net/wp-content/uploads/2012/07/ssd2.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The Intel 160GB SSD stock drive in my Lenovo T420s failed in May 2012, less than one year after the manufacturing date. And when I say failed, I mean it. The laptop suddenly responded slowly, then after a few seconds completely froze, gave a blue-screen and died. It would not reboot.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
